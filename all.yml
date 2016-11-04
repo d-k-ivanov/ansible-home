@@ -1,0 +1,10 @@
+---
+- name: User's environment and software
+  hosts: all
+  gather_facts: true
+  roles:
+    - role: soft
+      tags: ["user_env", "soft"]
+      become: true
+      serial: 1
+

@@ -1,0 +1,13 @@
+---
+- include: pacman.yml
+  when: 
+    - ansible_os_family == "Archlinux"
+    - ansible_pkg_mgr == "pacman"
+
+- include: pacman-config.yml
+  when: 
+    - ansible_os_family == "Archlinux"
+    - ansible_pkg_mgr == "pacman"
+
+- include: pip.yml
+

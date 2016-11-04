@@ -1,0 +1,98 @@
+---
+- name: Configuration management
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - ansible
+
+- name: AWS
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - python-boto
+    - python2-boto
+    - aws-cli
+    - s3cmd
+
+- name: Containers
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - docker
+
+- name: Editors
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - vim
+
+- name: File Managers
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - mc
+    - tree
+    - doublecmd-gtk2
+    - gnome-commander
+    - rsync
+ 
+- name: Network
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - traceroute
+    - tcpdump
+
+- name: Office
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - libreoffice-fresh
+ 
+- name: Parsers
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - jq
+    - pv
+ 
+- name: Python
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - supervisor
+    - python-pip
+    - python2-pip
+    - sysfsutils
+
+- name: Remote connection
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - rdesktop
+    - freerdp
+
+- name: Shells
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - zsh
+    - bash
+    - bash-completion
+    - fish
+ 
+- name: System tools
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - htop
+    - sysstat
+
+- name: Termials
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - minicom
+    - tmux
+    - xterm
+    - terminator
+
+- name: Version control
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - git
+ 
+- name: Web
+  pacman: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - curl
+    - wget
+
+
