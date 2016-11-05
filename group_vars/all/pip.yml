@@ -1,0 +1,6 @@
+---
+pip_packages:
+  - docker-py
+  - mkdocs 
+  - mkdocs-cinder
+  

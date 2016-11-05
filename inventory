@@ -3,7 +3,7 @@ dell01.keepbot.net  connection=local
 [home]
 dell01.keepbot.net
 
-[archlinux]
+[arch]
 dell01.keepbot.net
 
 [all:vars]

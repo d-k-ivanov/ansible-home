@@ -23,9 +23,10 @@ if [ ! $REMOTE_USER ]; then
   echo
 fi
 
-echo "Enter $REMOTE_USER password: "
 # Script
-ansible-playbook -i $ANSIBLE_HOME/inventory $ANSIBLE_HOME/all.yml -u $REMOTE_USER --ask-become-pass $@ 
+#echo "Enter $REMOTE_USER password: "
+#ansible-playbook -i $ANSIBLE_HOME/inventory $ANSIBLE_HOME/all.yml -u $REMOTE_USER --ask-become-pass $@ 
+ansible-playbook -i $ANSIBLE_HOME/inventory $ANSIBLE_HOME/all.yml -u $REMOTE_USER $@ 
 
 echo 
 exit 0

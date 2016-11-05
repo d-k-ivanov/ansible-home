@@ -1,7 +1,0 @@
----
-- name: pip packages
-  pip: name={{ item }} state=present
-  with_items:
-    - docker-py
-    - mkdocs 
-    - mkdocs-cinder
