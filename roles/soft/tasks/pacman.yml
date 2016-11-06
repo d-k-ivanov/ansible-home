@@ -18,5 +18,6 @@
 
 - name: Install software on Arch Linux
   pacman: name={{ item }} state=latest update_cache=yes
+  when: need_software_setup is defined
   with_items:
     - "{{ packages }}"

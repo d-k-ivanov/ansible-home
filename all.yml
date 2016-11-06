@@ -1,10 +1,17 @@
 ---
 - name: User's environment and software
-  hosts: all
+  hosts: arch
   gather_facts: true
   roles:
     - role: soft
       tags: ["user_env", "soft"]
       become: true
-      serial: 1
+
+    - role: touchpad
+      tags: ["hardware", "touchpad"]
+      become: true
+
+    - role: services
+      tags: ["systemd", "services"]
+      become: true
 

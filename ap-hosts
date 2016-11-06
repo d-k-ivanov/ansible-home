@@ -26,6 +26,8 @@ fi
 # Script
 #echo "Enter $REMOTE_USER password: "
 #ansible-playbook -i $ANSIBLE_HOME/inventory $ANSIBLE_HOME/all.yml -u $REMOTE_USER --ask-become-pass $@ 
+
+# "-e need_software_setup=yes" should be specified for software installation 
 ansible-playbook -i $ANSIBLE_HOME/inventory $ANSIBLE_HOME/all.yml -u $REMOTE_USER $@ 
 
 echo 
