@@ -4,13 +4,18 @@
   gather_facts: true
   
   vars_prompt:
+  - name: "need_main_software_setup"
+    prompt: "Do you want to install main software packages? (yes/no)"
+    default: "no"
+    private: no
+    
   - name: "need_aur_init"
     prompt: "Do you want to install AUR installer Yaourt? (yes/no)"
     default: "no"
     private: no
 
-  - name: "need_software_setup"
-    prompt: "Do you want to install main software packages? (yes/no)"
+  - name: "need_aur_software_setup"
+    prompt: "Do you want to install AUR software packages? (yes/no)"
     default: "no"
     private: no
 
@@ -26,5 +31,9 @@
 
     - role: services
       tags: ["systemd", "services"]
+      become: true
+
+    - role: userspace
+      tags: ["user_env", "userspace"]
       become: true
 

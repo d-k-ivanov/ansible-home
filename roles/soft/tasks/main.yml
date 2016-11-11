@@ -8,7 +8,7 @@
 
 - name: Install pip packages
   pip: name={{ item }} state=present
-  when: need_software_setup == "yes"
+  when: need_main_software_setup == "yes"
   with_items:
     - "{{ pip_packages }}"
 
@@ -26,6 +26,6 @@
   become: false
   when:
     - ansible_os_family == "Archlinux"
-    - need_software_setup == "yes"
+    - need_aur_software_setup == "yes"
   with_items:
     - "{{ aur_packages }}"

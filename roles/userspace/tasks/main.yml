@@ -1,0 +1,8 @@
+---
+# - name: Clone Spacemacs repo
+#   git: 
+#     repo: https://github.com/syl20bnr/spacemacs.git 
+#     dest: /home/{{ system_username }}/.emacs.d 
+#     refspec: +refs/pull/*:refs/heads/* 
+#     force: "yes"
+#   become: false
