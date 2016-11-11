@@ -1,4 +1,35 @@
 ---
+- name: Ensure that ~/.gnupg directory exists
+  file:
+    path: '/{{root_user}}/.gnupg'
+    state: 'directory'
+    owner: '{{ root_user }}'
+    group: '{{ root_group }}'
+    mode: '0700'
+
+# Mirrors. You can change counry or add another one to cover you needs (..country=DE&..)
+- name: Download pacman mirror list
+  get_url:
+    url: "https://www.archlinux.org/mirrorlist/?country=RU&protocol=http&ip_version=4&ip_version=6&use_mirror_status=on"
+    dest: "/etc/pacman.d/mirrorlist"
+    force: "yes"
+
+# Enable mirrors
+- name: "Uncomment `#Server` in pacman mirror list"
+  replace:
+    dest: "/etc/pacman.d/mirrorlist"
+    regexp: '^#Server'
+    replace: 'Server'
+
+# Pacman colors
+- name: "Uncomment pacman colors"
+  lineinfile:
+    dest: /etc/pacman.conf
+    state: "present"
+    regexp: "^Color"
+    insertafter: "^#Color"
+    line: "Color"
+
 # Enable multilib
 - name: Add multilib repo
   lineinfile:
@@ -18,6 +49,6 @@
 
 - name: Install software on Arch Linux
   pacman: name={{ item }} state=latest update_cache=yes
-  when: need_software_setup is defined
+  when: need_software_setup == "yes"
   with_items:
     - "{{ packages }}"

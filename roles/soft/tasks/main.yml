@@ -1,4 +1,5 @@
 ---
+# Installation of Maintained packages
 - name: Install software on Arch Linux
   include: pacman.yml
   when: 
@@ -7,6 +8,24 @@
 
 - name: Install pip packages
   pip: name={{ item }} state=present
-  when: need_software_setup is defined
+  when: need_software_setup == "yes"
   with_items:
     - "{{ pip_packages }}"
+
+# Installation of Community packages
+- name: Install initial AUR packages
+  include: aur_makepkg.yml pkg_name={{item}}
+  when: 
+    - ansible_os_family == "Archlinux"
+    - need_aur_init == "yes"
+  with_items:
+    - "{{ aur_packages_init }}"
+
+- name: Install main AUR packages
+  command: "yaourt -S --noconfirm {{item}}"
+  become: false
+  when:
+    - ansible_os_family == "Archlinux"
+    - need_software_setup == "yes"
+  with_items:
+    - "{{ aur_packages }}"

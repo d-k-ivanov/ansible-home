@@ -1,0 +1,19 @@
+---
+system_username: id
+system_group: id
+makepkg_nonroot_user: id
+user_groups:
+  - "audio"
+  - "ftp"
+  - "games"
+  - "id"
+  - "libvirt"
+  - "uuidd"
+  - "users"
+  - "video"
+  - "wheel"
+
+root_user: root
+root_group: root
+
+#need_software_setup: "yes"

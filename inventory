@@ -1,4 +1,4 @@
-dell01.keepbot.net  connection=local 
+dell01.keepbot.net  connection=local ansible_python_interpreter=/usr/bin/python2.7
 
 [home]
 dell01.keepbot.net

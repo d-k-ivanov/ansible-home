@@ -2,6 +2,18 @@
 - name: User's environment and software
   hosts: arch
   gather_facts: true
+  
+  vars_prompt:
+  - name: "need_aur_init"
+    prompt: "Do you want to install AUR installer Yaourt? (yes/no)"
+    default: "no"
+    private: no
+
+  - name: "need_software_setup"
+    prompt: "Do you want to install main software packages? (yes/no)"
+    default: "no"
+    private: no
+
   roles:
     - role: soft
       tags: ["user_env", "soft"]
@@ -10,6 +22,7 @@
     - role: touchpad
       tags: ["hardware", "touchpad"]
       become: true
+      when: laptop == "yes"
 
     - role: services
       tags: ["systemd", "services"]
