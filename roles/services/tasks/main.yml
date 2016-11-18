@@ -1,4 +1,14 @@
 ---
+- name: Cron default config 
+  copy: src=etc/default/cron dest=/etc/default/cron
+  tags: [config]
+  notify: restart cron
+
+- name: IRQBalance default config
+  copy: src=etc/default/irqbalance dest=/etc/default/irqbalance
+  tags: [config]
+  notify: restart irqbalance
+
 - name: Start and Enable services
   service:
     name: "{{item}}"

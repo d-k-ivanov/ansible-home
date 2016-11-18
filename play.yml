@@ -1,6 +1,6 @@
 ---
 - name: User's environment and software
-  hosts: arch
+  hosts: all
   gather_facts: true
   
   vars_prompt:

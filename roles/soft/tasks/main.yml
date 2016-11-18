@@ -12,6 +12,11 @@
   with_items:
     - "{{ pip_packages }}"
 
+- name: Add keys for AUR packages
+  command: "gpg --keyserver {{ item.keyserver }} --recv-keys {{ item.key }}"
+  become: false
+  with_items: "{{ gpg_keys }}"
+
 # Installation of Community packages
 - name: Install initial AUR packages
   include: aur_makepkg.yml pkg_name={{item}}

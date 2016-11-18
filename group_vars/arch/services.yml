@@ -9,6 +9,7 @@ services:
   - "dhcpcd"
   # - "fancontrol.service"
   - "healthd.service"
+  - "irqbalance.service"
   - "libvirtd.service"
   - "lightdm.service"
   - "lm_sensors.service"

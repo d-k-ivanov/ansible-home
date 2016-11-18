@@ -42,6 +42,7 @@ packages:
   - "make"
   - "maven"
   - "meld"
+  - "mercurial"
   - "monodevelop"
   - "ninja-ide"
   - "nodejs"
@@ -89,6 +90,7 @@ packages:
 # Configuraion management:
   - "ansible"
 # Editors:
+  - "l3afpad"
   - "vi"
   - "vim"
 # Files:
@@ -163,6 +165,7 @@ packages:
   - "telepathy-mission-control"
   - "thunderbird"
 # Monitoring:
+  - "atop"
   - "htop"
   - "glances"
   - "iotop"
@@ -269,6 +272,7 @@ packages:
   - "acpid"
   - "anthy"
   - "clipit"
+  - "cpio"
   - "cronie"
   - "dbus"
   - "dbus-c++"
@@ -281,7 +285,9 @@ packages:
   - "grep"
   - "groff"
   - "grub"
+  - "i7z"
   - "intel-ucode"
+  - "irqbalance"
   - "less"
   - "licenses"
   - "libnotify"
@@ -295,6 +301,7 @@ packages:
   - "python-dbus"
   - "python2-dbus"
   - "polkit"
+  - "rpmextract"
   - "sed"
   - "supervisor"
   - "sysfsutils"
@@ -340,6 +347,8 @@ packages:
   - "lightdm"
   - "lightdm-gtk-greeter"
   - "lightdm-gtk-greeter-settings"
+  - "linux"
+  - "linux-headers"
   - "lxde"
   - "mesa"
   - "mesa-demos"
@@ -347,6 +356,7 @@ packages:
   - "lib32-mesa-libgl"
   - "mesa-vdpau"
   - "xbindkeys"
+  - "xclip"
   - "xfce4-notifyd"
   - "xorg"
   - "xorg-apps"
@@ -357,7 +367,7 @@ packages:
   - "xscreensaver"
 
 desktop_packages:
-  -"wine"
+  - "wine"
 
 aur_packages_init:
   - "package-query"
@@ -369,6 +379,7 @@ aur_packages:
   - "consolas-font"
   - "dropbox"
   - "dropbox-cli"
+  - "google-chrome"
   - "jdk"
   - "oracle-sqldeveloper"
   - "pacmanager-git"
@@ -379,10 +390,11 @@ aur_packages:
   - "remmina-plugin-ultravnc"
   - "robomongo"
   - "sensors-lxpanel-plugin"
-  #- "skype"
+  - "skype"
   - "skypeforlinux-bin"
   - "sublime-text-dev"
   - "thermald"
+  - "tor-browser-en"
   - "yakyak"
   - "yed"
 
