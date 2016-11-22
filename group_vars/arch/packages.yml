@@ -31,6 +31,7 @@ packages:
   - "git-review"
   - "gnuplot"
   - "go"
+  - "gradle"
   - "ipython"
   - "ipython2"
   - "jdk8-openjdk"
@@ -374,27 +375,39 @@ aur_packages_init:
   - "yaourt"
 
 aur_packages:
+  # Android Development
+  - "android-sdk-build-tools"
   - "android-studio"
+  - "android-apktool"
+  - "dex2jar"
+  - "jd-gui"
+  # Desktop
   - "awesome-git"
   - "consolas-font"
-  - "dropbox"
-  - "dropbox-cli"
-  - "google-chrome"
+  # Development
   - "jdk"
   - "oracle-sqldeveloper"
+  - "robomongo"
+  # Edit
+  - "sublime-text-dev"
+  - "yed"
+  # Files
+  - "dropbox"
+  - "dropbox-cli"
+  # Internet
+  - "google-chrome"
+  - "skype"
+  - "skypeforlinux-bin"
+  - "tor-browser-en"
+  - "yakyak"
+  # Remote connection
   - "pacmanager-git"
   - "remmina-plugin-exec"
   - "remmina-plugin-open"
   - "remmina-plugin-rdesktop"
   - "remmina-plugin-teamviewer"
   - "remmina-plugin-ultravnc"
-  - "robomongo"
+  # System
   - "sensors-lxpanel-plugin"
-  - "skype"
-  - "skypeforlinux-bin"
-  - "sublime-text-dev"
   - "thermald"
-  - "tor-browser-en"
-  - "yakyak"
-  - "yed"
 
