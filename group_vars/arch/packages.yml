@@ -160,6 +160,7 @@ packages:
   - "lib32-sdl2"
 # Messages:
   - "empathy"
+  - "geary"
   - "telepathy"
   - "telepathy-accounts-signon"
   - "telepathy-farstream"
@@ -183,6 +184,7 @@ packages:
   - "gnome-alsamixer"
   - "gpac"
   - "lib32-alsa-plugins"
+  - "obs-studio"
   - "pavucontrol"
   - "pulseaudio"
   - "pulseaudio-alsa"
@@ -391,6 +393,8 @@ aur_packages:
   # Edit
   - "sublime-text-dev"
   - "yed"
+  # Electronics
+  - "xoscope"
   # Files
   - "dropbox"
   - "dropbox-cli"
