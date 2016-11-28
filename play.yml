@@ -29,6 +29,11 @@
       become: true
       when: laptop == "yes"
 
+    - role: lid
+      tags: ["hardware", "lid"]
+      become: true
+      when: laptop == "yes"
+
     - role: services
       tags: ["systemd", "services"]
       become: true

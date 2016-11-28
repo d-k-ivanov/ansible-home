@@ -1,4 +1,7 @@
 ---
 gpg_keys:
   - keyserver: "pool.sks-keyservers.net"
-    key: "2E1AC68ED40814E0
+    key: "2E1AC68ED40814E0"
+
+
+    

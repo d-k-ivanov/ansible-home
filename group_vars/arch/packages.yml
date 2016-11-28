@@ -160,7 +160,6 @@ packages:
   - "lib32-sdl2"
 # Messages:
   - "empathy"
-  - "geary"
   - "telepathy"
   - "telepathy-accounts-signon"
   - "telepathy-farstream"

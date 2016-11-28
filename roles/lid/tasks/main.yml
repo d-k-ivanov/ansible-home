@@ -1,0 +1,21 @@
+---
+- name: Copy lid rules to udev folder
+  copy:
+    src: "files/{{item}}"
+    dest: "/etc/udev/rules.d/{{item}}"
+    owner: "{{root_user}}"
+    group: "{{root_group}}"
+    mode: '0644'
+  with_items:
+    - 02-lid.rules
+  
+- name: Copy lid action script to bin folder
+  copy:
+    src: "files/{{item}}"
+    dest: "/usr/local/bin/{{item}}"
+    owner: "{{root_user}}"
+    group: "{{root_group}}"
+    mode: '0755'
+  with_items:
+    - lid_action.sh
+  
