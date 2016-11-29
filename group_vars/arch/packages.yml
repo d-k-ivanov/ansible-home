@@ -9,6 +9,10 @@ packages:
   - "s3cmd"
 # Databases:
   - "pgadmin3"
+# Degug
+  - "dstat"
+  - "strace"
+  - "valgrind"
 # Devellopment:
   - "apache-ant"
   - "autoconf"
@@ -73,7 +77,6 @@ packages:
   - "ruby"
   - "ruby-docs"
   - "spyder"
-  - "strace"
 # Download:
   - "filezilla"
   - "qbittorrent"
@@ -206,6 +209,7 @@ packages:
   - "networkmanager-pptp"
   - "networkmanager-qt"
   - "networkmanager-vpnc"
+  - "ngrep"
   - "nmap"
   - "ntp"
   - "openvpn"
@@ -308,6 +312,7 @@ packages:
   - "supervisor"
   - "sysfsutils"
   - "texinfo"
+  - "usbview"
   - "util-linux"
   - "which"
 # Termials:
@@ -385,6 +390,8 @@ aur_packages:
   # Desktop
   - "awesome-git"
   - "consolas-font"
+  # Debug:
+  - "bcc-tools"
   # Development
   - "jdk"
   - "oracle-sqldeveloper"

@@ -30,6 +30,5 @@ AC)
     sed -i "s/^.*\bHandleLidSwitch\b.*$/HandleLidSwitch=$LID_SWITCH_ACTION_AC/" /etc/systemd/logind.conf
     #/usr/bin/xbacklight -set $BRIGHTNESS_AC
     systemctl restart systemd-logind
-
     ;;
 esac
