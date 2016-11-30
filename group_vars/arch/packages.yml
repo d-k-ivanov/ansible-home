@@ -138,13 +138,19 @@ packages:
   - "noto-fonts"
   - "noto-fonts-cjk"
   - "opendesktop-fonts"
+  - "otf-ipafont "
   - "sdl_ttf"
+  - "terminus-font"
+  - "ttf-arphic-ukai"
+  - "ttf-arphic-uming"
   - "ttf-bitstream-vera"
   - "ttf-cheapskate"
   - "ttf-dejavu"
   - "ttf-droid"
+  - "ttf-inconsolata"
   - "ttf-liberation"
   - "ttf-ubuntu-font-family"
+  - "wqy-microhei-lite"
 # Graphics and Images:
   - "blender"
   - "cairo"
@@ -371,6 +377,7 @@ packages:
   - "xorg-server-utils"
   - "xorg-twm"
   - "xorg-xinit"
+  - "xorg-xlsfonts"
   - "xscreensaver"
 
 desktop_packages:
