@@ -8,6 +8,8 @@ packages:
   - "python2-boto"
   - "s3cmd"
 # Databases:
+  - "mariadb"
+  - "mysql-workbench"
   - "pgadmin3"
 # Degug
   - "dstat"
@@ -73,6 +75,8 @@ packages:
   - "python2-scipy"
   - "python2-sympy"
   - "python2-virtualenv"
+  - "qt5"
+  - "qtcreator"
   - "r"
   - "ruby"
   - "ruby-docs"
@@ -133,6 +137,7 @@ packages:
   - "font-bh-ttf"
   - "font-bitstream-speedo"
   - "fontconfig"
+  - "fontforge"
   - "freetype2"
   - "gnome-font-viewer"
   - "noto-fonts"
@@ -154,6 +159,8 @@ packages:
 # Graphics and Images:
   - "blender"
   - "cairo"
+  - "fbida"
+  - "feh"
   - "geeqie"
   - "gifsicle"
   - "gimp"
@@ -169,6 +176,7 @@ packages:
   - "lib32-sdl2"
 # Messages:
   - "empathy"
+  - "mutt"
   - "telepathy"
   - "telepathy-accounts-signon"
   - "telepathy-farstream"
@@ -400,6 +408,8 @@ aur_packages:
   # Debug:
   - "bcc-tools"
   # Development
+  - "jdk6"
+  - "jdk7"
   - "jdk"
   - "oracle-sqldeveloper"
   - "robomongo"
@@ -411,6 +421,8 @@ aur_packages:
   # Files
   - "dropbox"
   - "dropbox-cli"
+  # Images
+  - "fim"
   # Internet
   - "google-chrome"
   - "skype"
