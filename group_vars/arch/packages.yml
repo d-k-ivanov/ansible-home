@@ -298,6 +298,7 @@ packages:
   - "dbus"
   - "dbus-c++"
   - "dconf-editor"
+  - "encfs"
   - "gnome-control-center"
   - "gnome-settings-daemon"
   - "gnome-system-log"
