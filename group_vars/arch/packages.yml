@@ -82,6 +82,7 @@ packages:
   - "ruby"
   - "ruby-docs"
   - "spyder"
+  - "subversion"
 # Download:
   - "filezilla"
   - "qbittorrent"
@@ -117,6 +118,7 @@ packages:
 # File systems:
   - "dosfstools"
   - "fuse-exfat"
+  - "gparted"
   - "gvfs"
   - "gvfs-afc"
   - "gvfs-goa"
@@ -415,6 +417,7 @@ aur_packages:
   - "jdk"
   - "oracle-sqldeveloper"
   - "robomongo"
+  #- "unity-editor"
   # Edit
   - "sublime-text-dev"
   - "yed"
@@ -425,6 +428,8 @@ aur_packages:
   - "dropbox-cli"
   # Images
   - "fim"
+  #- "gmsh" 
+  #- "meshlab"
   # Internet
   - "google-chrome"
   - "skype"
