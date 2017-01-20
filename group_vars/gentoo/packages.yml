@@ -1,0 +1,26 @@
+---
+system_packages:
+  # Boot
+  - "grub:2"
+  # Kernel configuration
+  - "genkernel-next"
+  # Network
+  - "dhcpcd"
+  - "iw"
+  - "wpa_supplicant"
+  # Package management
+  - "eix"
+  - "euses"
+  - "gentoolkit"
+  - "layman"
+
+user_packages:
+  # Fonts
+  - "dejavu"
+  - "eselect-fontconfig"
+  - "fbset"
+  - "terminus-font"
+  # Shell enchanced
+  - "bash-completion"
+  # Files and folders navigation
+  - "mlocate"
