@@ -1,10 +1,15 @@
 dell01.keepbot.net  connection=local ansible_python_interpreter=/usr/bin/python2.7
+dell7510.pupupon.com  connection=local ansible_python_interpreter=/usr/bin/python2.7
 
 [home]
 dell01.keepbot.net
+dell7510.pupupon.com
 
 [arch]
 dell01.keepbot.net
+
+[gentoo]
+dell7510.pupupon.com
 
 [all:vars]
 ansible_ssh_extra_args = "-o ControlPersist=30m -o StrictHostKeyChecking=no"
