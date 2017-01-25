@@ -20,6 +20,6 @@ services:
   - "supervisord.service"
   - "sysstat.service"
   - "systemd-timesyncd.service"
-  - "teamviewerd.service"
+  # - "teamviewerd.service" # Not So Simple
   - "thermald.service"
   - "wpa_supplicant.service"

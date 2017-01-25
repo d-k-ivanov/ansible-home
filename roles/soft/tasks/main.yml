@@ -1,21 +1,27 @@
 ---
 # Installation of Maintained packages
-- name: Install software on Arch Linux
-  include: pacman.yml
-  when: 
-    - ansible_os_family == "Archlinux"
-    - ansible_pkg_mgr == "pacman"
 
+# ********************* Common
 - name: Install pip packages
   pip: name={{ item }} state=present
   when: need_main_software_setup == "yes"
   with_items:
     - "{{ pip_packages }}"
 
+# ********************* ArchLinux
+- name: Install software on Arch Linux
+  include: pacman.yml
+  when: 
+    - ansible_os_family == "Archlinux"
+    - ansible_pkg_mgr == "pacman"
+
 - name: Add keys for AUR packages
   command: "gpg --keyserver {{ item.keyserver }} --recv-keys {{ item.key }}"
   become: false
   with_items: "{{ gpg_keys }}"
+  when: 
+    - ansible_os_family == "Archlinux"
+    - ansible_pkg_mgr == "pacman"
 
 # Installation of Community packages
 - name: Install initial AUR packages
@@ -34,3 +40,10 @@
     - need_aur_software_setup == "yes"
   with_items:
     - "{{ aur_packages }}"
+
+# ********************* Gentoo
+- name: Install software on Arch Linux
+  include: portage.yml
+  when: 
+    - ansible_os_family == "Gentoo"
+    - ansible_pkg_mgr == "portage"

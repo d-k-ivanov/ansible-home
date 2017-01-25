@@ -10,12 +10,12 @@ services:
   - "dhcpcd.service"
   - "irqbalance.service"
   - "libvirtd.service"
-  - "lightdm.service"
+  - "slim.service"
   - "lm_sensors.service"
-  - "samba.service"
+  # - "samba.service"
   - "sshd.service"
   - "sysstat.service"
   - "systemd-timesyncd.service"
-  - "teamviewerd.service"
+  # - "teamviewerd12.service" # Not So Simple
   - "thermald.service"
   

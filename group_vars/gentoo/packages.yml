@@ -29,11 +29,13 @@ system_packages:
   - "sys-block/parted"
   - "sys-fs/reiserfsprogs"
   # Hardware
+  - "sys-apps/hdparm"
   - "sys-apps/lshw"
   # Kernel configuration
   - "sys-kernel/genkernel-next"
   # Monitioring
   - "sys-apps/dstat"
+  - "lxde-base/lxtask"
   # Network
   - "net-misc/bridge-utils"
   - "net-misc/dhcpcd"
@@ -85,11 +87,29 @@ user_packages:
   - "app-text/tree"
   - "x11-misc/xdg-user-dirs"
   # Fonts
+  - "media-fonts/artwiz-aleczapka-en" 
+  - "media-fonts/artwiz-latin1"
+  - "media-fonts/arphicfonts"
+  - "media-fonts/font-bh-ttf"
+  - "media-fonts/font-bitstream-speedo"
+  - "media-fonts/ttf-bitstream-vera"
+  - "media-fonts/cheapskatefonts"
   - "media-fonts/dejavu"
+  - "media-fonts/droid"
   - "app-eselect/eselect-fontconfig"
   - "sys-apps/fbset"
+  - "media-libs/fontconfig"
+  - "media-gfx/fontforge"
+  - "media-fonts/ja-ipafonts"
   - "media-fonts/inconsolata"
+  - "media-fonts/ipamonafont"
+  - "media-fonts/liberation-fonts"
+  - "media-fonts/noto"
+  - "media-fonts/noto-cjk"
+  - "media-fonts/opendesktop-fonts"
   - "media-fonts/terminus-font"
+  - "media-fonts/ubuntu-font-family"
+  - "media-fonts/wqy-microhei"
   - "x11-apps/xlsfonts"
   # FTP 
   - "net-ftp/filezilla"
@@ -112,6 +132,7 @@ user_packages:
   - "net-print/cups-pk-helper"
   - "net-print/cups-windows"
   - "app-text/ghostscript-gpl"
+  - "net-print/gtklp"
   - "net-print/hplip"
   - "net-print/hplip-plugin"
   # Shell enchanced
@@ -159,6 +180,9 @@ dev_packages:
   - "dev-util/ninja-ide"
   - "dev-python/spyder"
   - "dev-qt/qt-creator"
+  # JAVA
+  - "dev-java/oracle-jdk-bin"
+  - "virtual/jdk"
   # JavaScript
   - "net-libs/nodejs"
   - "www-client/phantomjs"
@@ -178,6 +202,7 @@ dev_packages:
   # Python
   - "dev-python/ipython"
   - "dev-python/xvfbwrapper"
+  - "dev-python/pip"
   # R
   - "dev-lang/R"
   # Ruby
@@ -198,9 +223,15 @@ dev_packages:
   - "app-text/xmlto"
 
 xorg_environment:
+  # 3D
+  - "x11-libs/libGLw"
+  - "media-libs/mesa"
+  - "mesa-progs"
   # Base
   - "x11-base/xorg-server"
   - "x11-libs/libxkbcommon"
+  # Diaplay manager
+  - "x11-misc/slim"
   # Drivers
   - "x11-drivers/nvidia-drivers"
   - "x11-base/xorg-drivers"
@@ -259,14 +290,12 @@ virtual_packages:
   - "app-emulation/winetricks"
   # Workstation
   - "app-emulation/virtualbox"
+  - "app-emulation/virtualbox-additions"
+  - "virtualbox-modules"
+  - "virtualbox-extpack-oracle"
 
 
-  # PIP dont forget to install pip
-
-
-
-
-    ---
+# PIP dont forget to install pip
 
 # In progress
 
@@ -276,6 +305,7 @@ virtual_packages:
 
 # gucharmap groff irqbalance libnotify lm_sensors logrotate lsof man-pages polkit rpmdevtools sed supervisor sysfsutils texinfo usbview util-linux minicom terminator cadaver curl owncloud-client wget whois adwaita-icon-theme arandr xrandr dex gmrun recordmydesktop linux-headers xbindkeys x11-misc/xclip xscreensaver android-studio android-ndk android-tools android-sdk-update-manager android-util jd bcc xoscope fim google-chrome thermald networkmanager networkmanager-openvpn networkmanager-openconnect networkmanager-pptp networkmanager-vpnc samba
 
+# gnome-control-center gnome-settings-daemon gnome-system-log gnome-system-monitor gnome-font-viewer
 
 # # Not Done
 
@@ -288,4 +318,4 @@ virtual_packages:
 
 
 
-# goldendict tor gnome-control-center gnome-settings-daemon gnome-system-log gnome-system-monitor 
+# goldendict tor 

@@ -146,7 +146,7 @@ packages:
   - "noto-fonts"
   - "noto-fonts-cjk"
   - "opendesktop-fonts"
-  - "otf-ipafont "
+  - "otf-ipafont"
   - "sdl_ttf"
   - "terminus-font"
   - "ttf-arphic-ukai"
