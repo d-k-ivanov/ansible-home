@@ -1,0 +1,13 @@
+# required by skype (argument)
+>=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
+# required by google-chrome (argument)
+>=www-client/google-chrome-55.0.2883.87 google-chrome
+# required by adobe-flash (argument)
+>=www-plugins/adobe-flash-24.0.0.194 AdobeFlash-11.x
+# required by net-misc/teamviewer (argument)
+>=net-misc/teamviewer-12.0.71510 TeamViewer
+# required by virtualbox-extpack-oracle (argument)
+=app-emulation/virtualbox-extpack-oracle-5.1.14.112924 PUEL
+# required by virtual/jdk-1.8.0-r3::gentoo
+# required by virtual/jdk (argument)
+>=dev-java/oracle-jdk-bin-1.8.0.112 Oracle-BCLA-JavaSE

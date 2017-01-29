@@ -1,0 +1,779 @@
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[X,multilib]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-libs/libX11-1.6.4 abi_x86_32
+# required by x11-libs/libXext-1.3.3::gentoo
+# required by x11-libs/cairo-1.14.6::gentoo[X]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[tools]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-proto/xextproto-7.3.0 abi_x86_32
+# required by x11-libs/libX11-1.6.4::gentoo
+# required by x11-libs/gdk-pixbuf-2.34.0::gentoo[X]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[tools]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-libs/libxcb-1.12 abi_x86_32
+# required by x11-libs/libX11-1.6.4::gentoo
+# required by x11-libs/gdk-pixbuf-2.34.0::gentoo[X]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[tools]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-proto/inputproto-2.3.2 abi_x86_32
+# required by x11-libs/libX11-1.6.4::gentoo
+# required by x11-libs/gdk-pixbuf-2.34.0::gentoo[X]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[tools]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf6-input-evdev-2.10.3::gentoo
+>=x11-proto/kbproto-1.0.7 abi_x86_32
+# required by x11-libs/libX11-1.6.4::gentoo
+# required by x11-libs/gdk-pixbuf-2.34.0::gentoo[X]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[tools]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-proto/xf86bigfontproto-1.2.0-r1 abi_x86_32
+# required by x11-libs/libX11-1.6.4::gentoo
+# required by x11-libs/gdk-pixbuf-2.34.0::gentoo[X]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[tools]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-proto/xproto-7.0.29 abi_x86_32
+# required by x11-libs/libxcb-1.12::gentoo
+# required by media-libs/mesa-12.0.1::gentoo
+# required by x11-base/xorg-server-1.18.4::gentoo[-minimal]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[X]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by xorg-drivers (argument)
+>=x11-libs/libXdmcp-1.1.2-r1 abi_x86_32
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[X,multilib]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.18.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-libs/libXext-1.3.3 abi_x86_32
+# required by x11-libs/libxcb-1.12::gentoo
+# required by media-libs/mesa-12.0.1::gentoo
+# required by x11-base/xorg-server-1.18.4::gentoo[-minimal]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[X]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by xorg-drivers (argument)
+>=x11-proto/xcb-proto-1.12-r2 abi_x86_32
+# required by x11-libs/libxcb-1.12::gentoo
+# required by media-libs/mesa-12.0.1::gentoo
+# required by x11-base/xorg-server-1.18.4::gentoo[-minimal]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[X]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by xorg-drivers (argument)
+>=dev-libs/libpthread-stubs-0.3-r1 abi_x86_32
+# required by x11-libs/libxcb-1.12::gentoo
+# required by media-libs/mesa-12.0.1::gentoo
+# required by x11-base/xorg-server-1.18.4::gentoo[-minimal]
+# required by x11-drivers/nvidia-drivers-375.26::gentoo[X]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_nvidia]
+# required by xorg-drivers (argument)
+>=x11-libs/libXau-1.0.8 abi_x86_32
+# required by x11-wm/awesome-3.5.9::gentoo
+# required by x11-wm/awesome (argument)
+>=x11-libs/cairo-1.14.6 xcb
+# required by x11-wm/awesome-3.5.9::gentoo
+# required by x11-wm/awesome (argument)
+>=media-gfx/imagemagick-6.9.6.6 png
+# required by x11-misc/xdg-utils-1.1.1-r1::gentoo
+# required by xdg-utils (argument)
+>=app-text/xmlto-0.0.26-r1 text
+# required by x11-libs/libxkbcommon-0.6.0::gentoo[X]
+# required by libxkbcommon (argument)
+>=x11-libs/libxcb-1.12 xkb
+# required by dev-python/xvfbwrapper-0.2.4::gentoo
+# required by xvfbwrapper (argument)
+>=x11-base/xorg-server-1.18.4 xvfb glamour
+# required by www-client/firefox-45.6.0-r1::gentoo
+# required by firefox (argument)
+>=dev-lang/python-2.7.12:2.7 sqlite
+# required by www-client/firefox-45.6.0-r1::gentoo
+# required by firefox (argument)
+>=media-libs/libpng-1.6.27 apng
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by virt-manager (argument)
+>=app-emulation/libvirt-glib-1.0.0 python
+# required by app-emulation/wine-1.8.3::gentoo[xcomposite]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=x11-libs/libXcomposite-0.4.4-r1 abi_x86_32
+# required by dev-libs/glib-2.48.2::gentoo[xattr]
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=sys-apps/attr-2.4.47-r2 abi_x86_32
+# required by dev-qt/qtwebkit-5.6.2::gentoo
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+>=dev-qt/qtcore-5.6.2-r1 icu
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-qt/qtwebkit-4.8.6-r1:4 abi_x86_32 -exceptions
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=media-libs/freetype-2.6.3-r1 abi_x86_32
+# required by app-emulation/wine-1.8.3::gentoo[alsa]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=media-libs/alsa-lib-1.1.2 abi_x86_32
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-qt/qtxmlpatterns-4.8.6-r1:4 abi_x86_32
+# required by x11-libs/libSM-1.2.2-r1::gentoo[uuid]
+# required by dev-qt/qtgui-5.6.2::gentoo[xcb]
+# required by net-misc/owncloud-client-2.2.4-r1::gentoo
+# required by owncloud-client (argument)
+>=sys-apps/util-linux-2.26.2 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=media-libs/libpng-1.6.27 abi_x86_32
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-qt/qtgui-4.8.6-r4:4 abi_x86_32
+# required by net-misc/owncloud-client-2.2.4-r1::gentoo
+# required by owncloud-client (argument)
+>=dev-qt/qtwebkit-5.6.2 printsupport
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=dev-qt/qtscript-4.8.6-r2:4 abi_x86_32
+# required by sys-devel/clang-3.7.1-r100::gentoo
+# required by dev-util/bcc-0.2.0-r1::gentoo
+# required by bcc (argument)
+>=sys-devel/llvm-3.7.1-r3 clang
+# required by x11-libs/libXxf86vm-1.1.4::gentoo
+# required by app-emulation/wine-1.8.3::gentoo[X]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=x11-proto/xf86vidmodeproto-2.3.1-r1 abi_x86_32
+# required by app-emulation/wine-1.8.3::gentoo[ssl]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=net-libs/gnutls-3.3.26 abi_x86_32
+# required by dev-qt/qtcore-4.8.6-r2::gentoo[glib]
+# required by dev-qt/qttranslations-4.8.6-r1::gentoo
+>=dev-libs/glib-2.48.2 abi_x86_32
+# required by net-im/skype-4.3.0.37-r6::gentoo[pulseaudio]
+# required by skype (argument)
+>=media-sound/pulseaudio-9.0 abi_x86_32
+# required by x11-libs/libXi-1.7.8::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libXfixes-5.0.3 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libICE-1.0.9 abi_x86_32
+# required by x11-libs/libXv-1.0.11::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo[xv]
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-proto/videoproto-2.3.3 abi_x86_32
+# required by x11-terms/terminator-0.97-r1::gentoo
+# required by terminator (argument)
+>=x11-libs/vte-0.28.2-r207:0 python
+# required by app-emulation/wine-1.8.3::gentoo[xml]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=dev-libs/libxslt-1.1.29 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libXrandr-1.5.1 abi_x86_32
+# required by dev-qt/qtdbus-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=sys-apps/dbus-1.10.12 abi_x86_32
+# required by app-emulation/wine-1.8.3::gentoo[ncurses]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=sys-libs/ncurses-6.0-r1 abi_x86_32
+# required by x11-libs/libXfixes-5.0.3::gentoo
+# required by x11-libs/libXcomposite-0.4.4-r1::gentoo
+# required by app-emulation/wine-1.8.3::gentoo[xcomposite]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=x11-proto/fixesproto-5.0-r1 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo[xv]
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libXv-1.0.11 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libXi-1.7.8 abi_x86_32
+# required by dev-db/sqlite-3.13.0::gentoo[readline]
+# required by dev-qt/qtsql-5.6.2::gentoo[sqlite]
+# required by net-misc/owncloud-client-2.2.4-r1::gentoo
+# required by owncloud-client (argument)
+>=sys-libs/readline-6.3_p8-r3 abi_x86_32
+# required by net-libs/gnutls-3.3.26::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo
+# required by dev-python/libvirt-python-2.3.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by virt-manager (argument)
+>=dev-libs/libtasn1-4.9-r1 abi_x86_32
+# required by dev-libs/glib-2.48.2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-libs/libpcre-8.39 abi_x86_32 pcre16
+# required by media-libs/fontconfig-2.11.1-r2::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=dev-libs/expat-2.2.0-r1 abi_x86_32
+# required by media-libs/gst-plugins-base-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=media-libs/gstreamer-0.10.36-r2:0.10 abi_x86_32
+# required by gnome-base/gnome-keyring-3.20.0::gentoo
+# required by app-crypt/libsecret-0.18.5::gentoo
+>=app-crypt/pinentry-0.9.7-r1 gnome-keyring
+# required by app-emulation/wine-1.8.3::gentoo[lcms]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=media-libs/lcms-2.6-r1 abi_x86_32
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=media-libs/gst-plugins-base-0.10.36-r2:0.10 abi_x86_32
+# required by media-libs/gst-plugins-base-0.10.36-r2::gentoo[orc]
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-lang/orc-0.4.26-r1 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=media-libs/fontconfig-2.11.1-r2 abi_x86_32
+# required by x11-libs/libXcomposite-0.4.4-r1::gentoo
+# required by app-emulation/wine-1.8.3::gentoo[xcomposite]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=x11-proto/compositeproto-0.4.2-r1 abi_x86_32
+# required by app-emulation/wine-1.8.3::gentoo[X]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=x11-libs/libXxf86vm-1.1.4 abi_x86_32
+# required by x11-libs/libXrandr-1.5.1::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-proto/randrproto-1.5.0 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libXcursor-1.1.14 abi_x86_32
+# required by media-libs/gst-plugins-base-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=sys-libs/zlib-1.2.11 abi_x86_32
+# required by dev-libs/libxslt-1.1.29::gentoo[crypt]
+# required by app-emulation/wine-1.8.3::gentoo[xml]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=dev-libs/libgcrypt-1.7.3 abi_x86_32
+# required by x11-libs/libXrender-0.9.10::gentoo
+# required by x11-libs/libXrandr-1.5.1::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-proto/renderproto-0.11.1-r1 abi_x86_32
+# required by dev-libs/libgcrypt-1.7.3::gentoo
+# required by dev-libs/libxslt-1.1.29::gentoo[crypt]
+# required by app-emulation/wine-1.8.3::gentoo[xml]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=dev-libs/libgpg-error-1.24 abi_x86_32
+# required by gnome-base/gnome-keyring-3.20.0::gentoo
+# required by app-crypt/libsecret-0.18.5::gentoo
+# required by app-crypt/pinentry-0.9.7-r1::gentoo[gnome-keyring]
+>=app-crypt/gcr-3.20.0 gtk
+# required by net-libs/gnutls-3.3.26::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo
+# required by dev-python/libvirt-python-2.3.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by virt-manager (argument)
+>=dev-libs/nettle-3.2-r1 abi_x86_32
+# required by media-libs/freetype-2.6.3-r1::gentoo[bzip2]
+# required by app-emulation/wine-1.8.3::gentoo[truetype]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=app-arch/bzip2-1.0.6-r7 abi_x86_32
+# required by app-emulation/wine-1.8.3::gentoo[nls]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by winetricks (argument)
+>=sys-devel/gettext-0.19.7 abi_x86_32
+# required by x11-terms/terminator-0.97-r1::gentoo
+# required by terminator (argument)
+>=dev-libs/keybinder-0.3.1-r200:0 python
+# required by dev-libs/nettle-3.2-r1::gentoo[gmp]
+# required by net-libs/gnutls-3.3.26::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo
+# required by dev-python/libvirt-python-2.3.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by virt-manager (argument)
+>=dev-libs/gmp-6.1.0 abi_x86_32
+# required by net-misc/owncloud-client-2.2.4-r1::gentoo
+# required by owncloud-client (argument)
+>=dev-libs/qtkeychain-0.7.0 qt5
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-qt/qtcore-4.8.6-r2:4 abi_x86_32
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-db/sqlite-3.13.0 abi_x86_32
+# required by x11-libs/libXcursor-1.1.14::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libXrender-0.9.10 abi_x86_32
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by dev-qt/qtopengl-4.8.6-r1::gentoo
+# required by app-emulation/virtualbox-4.3.38::gentoo[opengl,qt4,-headless]
+# required by virtualbox (argument)
+>=x11-libs/libSM-1.2.2-r1 abi_x86_32
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-qt/qtdbus-4.8.6-r1:4 abi_x86_32
+# required by app-emulation/docker-1.11.0::gentoo[seccomp]
+# required by app-emulation/docker (argument)
+>=sys-libs/libseccomp-2.3.0 static-libs
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=x11-libs/libXScrnSaver-1.2.2-r1 abi_x86_32
+# required by dev-qt/qtcore-4.8.6-r2::gentoo[ssl]
+# required by dev-qt/qttranslations-4.8.6-r1::gentoo
+=dev-libs/openssl-1.0.2j abi_x86_32
+# required by media-libs/gst-plugins-base-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-libs/libxml2-2.9.4-r1 abi_x86_32 python
+# required by dev-util/rpmdevtools-8.5::gentoo
+# required by rpmdevtools (argument)
+>=app-arch/rpm-4.11.0.1 python
+# required by net-libs/webkit-gtk-2.12.5::gentoo[webgl,opengl]
+# required by net-libs/gnome-online-accounts-3.20.4::gentoo
+# required by gnome-base/gnome-control-center-3.20.1-r1::gentoo[gnome-online-accounts]
+# required by gnome-control-center (argument)
+>=x11-libs/cairo-1.14.6 opengl
+# required by net-libs/webkit-gtk-2.12.5::gentoo
+# required by net-libs/gnome-online-accounts-3.20.4::gentoo
+# required by gnome-base/gnome-control-center-3.20.1-r1::gentoo[gnome-online-accounts]
+# required by gnome-control-center (argument)
+>=media-libs/harfbuzz-1.3.1 icu
+# required by x11-libs/libXScrnSaver-1.2.2-r1::gentoo
+# required by net-im/skypeforlinux-1.16.0.1::gentoo
+# required by skypeforlinux (argument)
+>=x11-proto/scrnsaverproto-1.2.2-r1 abi_x86_32
+# required by net-libs/webkit-gtk-2.12.5::gentoo[gstreamer]
+# required by net-libs/gnome-online-accounts-3.20.4::gentoo
+# required by gnome-base/gnome-control-center-3.20.1-r1::gentoo[gnome-online-accounts]
+# required by gnome-control-center (argument)
+>=media-libs/gst-plugins-bad-1.8.3-r1 opengl
+# required by dev-qt/qtwidgets-5.6.2::gentoo
+# required by dev-qt/qtopengl-5.6.2::gentoo
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+>=dev-qt/qtgui-5.6.2 -gles2
+# required by dev-qt/qtopengl-5.6.2::gentoo
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+>=dev-qt/qtwidgets-5.6.2 -gles2
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+>=dev-qt/qtprintsupport-5.6.2 -gles2
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+>=dev-qt/qtdeclarative-5.6.2 -gles2
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+>=dev-qt/qtopengl-5.6.2 -gles2
+
+# required by dev-qt/qtnetwork-5.6.2::gentoo[ssl]
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+#>=dev-libs/openssl-1.1.0c bindist
+
+# required by sci-libs/gdal-2.0.2-r3::gentoo
+# required by dev-db/mysql-workbench-6.3.4-r1::gentoo
+# required by mysql-workbench (argument)
+>=sys-libs/zlib-1.2.11 minizip
+# required by virtual/jpeg-0-r2::gentoo
+# required by media-libs/lcms-2.6-r1::gentoo[jpeg]
+# required by app-text/poppler-0.45.0::gentoo[lcms]
+# required by net-print/cups-filters-1.5.0::gentoo
+# required by net-print/cups-2.1.4::gentoo
+# required by dev-java/icedtea-bin-3.2.0::gentoo[-multilib,cups]
+# required by virtual/jdk-1.8.0-r3::gentoo
+# required by virtual/jre-1.8.0-r1::gentoo
+# required by dev-java/icedtea-web-1.6.1-r1::gentoo
+>=media-libs/libjpeg-turbo-1.5.0 abi_x86_32
+# required by media-libs/lcms-2.6-r1::gentoo[jpeg]
+# required by app-text/poppler-0.45.0::gentoo[lcms]
+# required by net-print/cups-filters-1.5.0::gentoo
+# required by net-print/cups-2.1.4::gentoo
+# required by dev-java/icedtea-bin-3.2.0::gentoo[-multilib,cups]
+# required by virtual/jdk-1.8.0-r3::gentoo
+# required by virtual/jre-1.8.0-r1::gentoo
+# required by dev-java/icedtea-web-1.6.1-r1::gentoo
+>=virtual/jpeg-0-r2:0 abi_x86_32
+# required by sys-apps/systemd-226-r2::gentoo
+# required by media-sound/pulseaudio-9.0::gentoo[systemd]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=sys-libs/libcap-2.24-r2 abi_x86_32
+# required by media-libs/libvorbis-1.3.5::gentoo
+# required by media-libs/libsndfile-1.0.26::gentoo[-minimal]
+# required by media-sound/pulseaudio-9.0::gentoo
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=media-libs/libogg-1.3.2 abi_x86_32
+# required by virtual/libffi-3.0.13-r1::gentoo
+# required by dev-libs/glib-2.48.2::gentoo
+# required by media-libs/gstreamer-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-libs/libffi-3.2.1 abi_x86_32
+# required by dev-libs/glib-2.48.2::gentoo
+# required by media-libs/gstreamer-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=virtual/libintl-0-r2 abi_x86_32
+# required by media-libs/libsndfile-1.0.26::gentoo[-minimal]
+# required by media-sound/pulseaudio-9.0::gentoo
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=media-libs/flac-1.3.2-r1 abi_x86_32
+# required by x11-libs/libXtst-1.2.3::gentoo
+# required by media-sound/pulseaudio-9.0::gentoo[X]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=x11-proto/recordproto-1.14.2-r1 abi_x86_32
+# required by mail-client/thunderbird-45.6.0-r1::gentoo[crypt]
+# required by thunderbird (argument)
+>=app-crypt/pinentry-0.9.7-r1 gtk
+# required by dev-qt/qtcore-4.8.6-r2::gentoo[iconv]
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=media-libs/libsndfile-1.0.26 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=dev-libs/json-c-0.12 abi_x86_32
+# required by sys-apps/systemd-226-r2::gentoo[lz4]
+# required by media-sound/pulseaudio-9.0::gentoo[systemd]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=app-arch/lz4-0_p131 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo[tcpd]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=sys-apps/tcp-wrappers-7.6.22-r1 abi_x86_32
+# required by media-libs/libsndfile-1.0.26::gentoo[-minimal]
+# required by media-sound/pulseaudio-9.0::gentoo
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=media-libs/libvorbis-1.3.5 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo[X]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=x11-libs/libXtst-1.2.3 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo[asyncns]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=net-libs/libasyncns-0.8-r3 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo[systemd]
+# required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
+>=sys-apps/systemd-226-r2 abi_x86_32
+# required by virtual/pkgconfig-0-r1::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=dev-util/pkgconfig-0.28-r2 abi_x86_32
+# required by media-libs/gstreamer-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=virtual/pkgconfig-0-r1 abi_x86_32
+# required by media-sound/pulseaudio-9.0::gentoo[alsa,alsa-plugin]
+# required by net-im/skype-4.3.0.37-r6::gentoo[pulseaudio]
+# required by skype (argument)
+>=media-plugins/alsa-plugins-1.1.1 pulseaudio abi_x86_32
+# required by dev-libs/glib-2.48.2::gentoo
+# required by media-libs/gstreamer-0.10.36-r2::gentoo
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by skype (argument)
+>=virtual/libffi-3.0.13-r1 abi_x86_32
+# required by dev-util/eric-17.01::gentoo
+# required by dev-util/eric (argument)
+>=dev-python/PyQt4-4.11.4-r1 help svg webkit sql
+# required by dev-python/ipython-3.2.1-r1::gentoo[python_targets_python3_4]
+# required by dev-python/ipython (argument)
+>=dev-lang/python-3.4.5 sqlite
+# required by dev-util/ninja-ide-2.3::gentoo
+# required by dev-util/ninja-ide (argument)
+>=dev-python/PyQt4-4.11.4-r1 declarative
+>=dev-lang/mono-4.4.1.0 minimal
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+>=dev-python/QtPy-1.1.2 svg webkit
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=media-libs/mesa-12.0.1 gles2 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-proto/xf86driproto-2.1.1-r1 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo[dri3]
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-proto/dri3proto-1.0 abi_x86_32
+# required by x11-libs/libdrm-2.4.70::gentoo[video_cards_intel]
+# required by media-libs/mesa-12.0.1::gentoo[-video_cards_ilo,video_cards_intel,-video_cards_i915,-video_cards_i965]
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-libs/libpciaccess-0.13.4 abi_x86_32
+# required by virtual/glu-9.0-r1::gentoo
+# required by media-libs/libsdl-1.2.15-r9::gentoo[opengl]
+# required by app-emulation/virtualbox-4.3.38::gentoo[-headless]
+# required by app-emulation/virtualbox (argument)
+>=media-libs/glu-9.0.0-r1 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-libs/libxshmfence-1.2 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo[dri3]
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-proto/presentproto-1.0 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-proto/dri2proto-2.8-r1 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-libs/libdrm-2.4.70 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-proto/glproto-1.4.17-r1 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo[llvm]
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=sys-devel/llvm-3.7.1-r3 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-libs/libXdamage-1.1.4-r1 abi_x86_32
+# required by x11-libs/libXdamage-1.1.4-r1::gentoo
+# required by media-libs/mesa-12.0.1::gentoo
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=x11-proto/damageproto-1.2.1-r1 abi_x86_32
+# required by media-libs/glu-9.0.0-r1::gentoo
+# required by virtual/glu-9.0-r1::gentoo
+# required by media-libs/libsdl-1.2.15-r9::gentoo[opengl]
+# required by app-emulation/virtualbox-4.3.38::gentoo[-headless]
+# required by app-emulation/virtualbox (argument)
+>=virtual/opengl-7.0-r1 abi_x86_32
+# required by app-emulation/wine-1.8.3::gentoo[opengl]
+# required by app-emulation/winetricks-20160724::gentoo
+# required by app-emulation/winetricks (argument)
+>=virtual/glu-9.0-r1 abi_x86_32
+# required by media-libs/mesa-12.0.1::gentoo[udev]
+# required by virtual/opengl-7.0-r1::gentoo
+# required by app-emulation/qemu-2.7.0-r7::gentoo
+# required by app-emulation/libvirt-2.3.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo
+# required by app-emulation/virt-manager (argument)
+>=virtual/libudev-215-r1 abi_x86_32
+# required by x11-misc/pcmanfm-1.2.3::gentoo
+# required by x11-misc/pcmanfm (argument)
+>=x11-libs/libfm-1.2.4 gtk
+# required by kde-plasma/polkit-kde-agent-5.8.3::gentoo
+# required by kde-frameworks/kauth-5.29.0::gentoo[policykit]
+# required by kde-frameworks/kdelibs4support-5.29.0::gentoo
+# required by kde-plasma/kde-cli-tools-5.8.3::gentoo[X]
+# required by kde-apps/print-manager-16.08.3::gentoo
+# required by print-manager (argument)
+>=sys-auth/polkit-qt-0.112.0-r1 qt5
+# required by media-libs/phonon-4.9.0::gentoo[vlc]
+# required by kde-frameworks/knotifications-5.29.0::gentoo
+# required by kde-frameworks/kdelibs4support-5.29.0::gentoo
+# required by kde-plasma/kde-cli-tools-5.8.3::gentoo[X]
+# required by kde-apps/print-manager-16.08.3::gentoo
+# required by print-manager (argument)
+>=media-libs/phonon-vlc-0.9.0 qt5
+# required by kde-frameworks/knotifications-5.29.0::gentoo[dbus]
+# required by kde-frameworks/kdelibs4support-5.29.0::gentoo
+# required by kde-plasma/kde-cli-tools-5.8.3::gentoo[X]
+# required by kde-apps/print-manager-16.08.3::gentoo
+# required by print-manager (argument)
+>=dev-libs/libdbusmenu-qt-0.9.3_pre20140619-r1 qt5
+# required by dev-qt/qtsingleapplication-2.6.1_p20150629::gentoo
+# required by app-office/texmaker-4.5::gentoo
+# required by texmaker (argument)
+>=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
+# required by media-libs/phonon-vlc-0.9.0::gentoo
+>=media-libs/phonon-4.9.0 qt5
+# required by app-office/texmaker-4.5::gentoo
+# required by texmaker (argument)
+>=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
+# required by app-office/texmaker-4.5::gentoo
+# required by texmaker (argument)
+>=app-text/poppler-0.45.0 qt5
+# required by media-libs/phonon-vlc-0.9.0::gentoo
+# required by media-libs/phonon-4.9.0::gentoo[vlc]
+# required by kde-frameworks/knotifications-5.29.0::gentoo
+# required by kde-frameworks/kdelibs4support-5.29.0::gentoo
+# required by kde-plasma/kde-cli-tools-5.8.3::gentoo[X]
+# required by kde-apps/print-manager-16.08.3::gentoo
+# required by print-manager (argument)
+>=media-video/vlc-2.2.4 ogg vorbis
+# required by app-text/evince-3.20.1::gentoo
+# required by evince (argument)
+>=app-text/poppler-0.45.0 cairo
+# required by media-gfx/simple-scan-3.20.0::gentoo
+# required by simple-scan (argument)
+>=dev-libs/libgusb-0.2.9 vala
+# required by media-video/obs-studio-17.0.0::gentoo
+# required by obs-studio (argument)
+>=media-video/ffmpeg-2.8.10 x264
+# required by x11-misc/shutter-0.93.1-r2::gentoo
+# required by shutter (argument)
+>=media-gfx/imagemagick-6.9.6.6 perl
+# required by media-gfx/pinta-1.6-r2::gentoo
+# required by pinta (argument)
+>=x11-libs/gdk-pixbuf-2.34.0 tiff
+# required by media-video/cheese-3.20.2::gentoo
+# required by cheese (argument)
+>=media-libs/gst-plugins-base-1.8.3-r1 theora
+# required by net-fs/samba-4.2.14::gentoo
+# required by samba (argument)
+>=sys-libs/ntdb-1.0-r1 python
+# required by sys-libs/ldb-1.1.26::gentoo
+# required by net-fs/samba-4.2.14::gentoo
+# required by samba (argument)
+>=sys-libs/tevent-0.9.28 python
+# required by sys-libs/ldb-1.1.26::gentoo
+# required by net-fs/samba-4.2.14::gentoo
+# required by samba (argument)
+>=sys-libs/tdb-1.3.8 python
+# required by dev-util/android-ndk-13b::gentoo
+# required by android-ndk (argument)
+=sys-libs/ncurses-5.9-r101 tinfo
+# required by dev-util/android-sdk-update-manager-24.4.1::gentoo
+# required by dev-util/android-ndk-13b::gentoo
+# required by android-ndk (argument)
+>=dev-java/swt-3.7.2-r1:3.7 cairo
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo[gtk]
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.31 usbredir gtk3
+# required by app-emulation/virt-manager-1.4.0-r2::gentoo[gtk]
+# required by @selected
+# required by @world (argument)
+>=net-libs/gtk-vnc-0.6.0 python
+# required by app-emulation/libvirt-2.5.0-r2::gentoo[parted]
+# required by app-emulation/libvirt-glib-1.0.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=sys-block/parted-3.2 device-mapper
+net-fs/samba client
+# required by net-print/cups-filters-1.13.3::gentoo[postscript]
+# required by net-print/cups-filters (argument)
+>=app-text/ghostscript-gpl-9.15-r1 cups
+# required by media-libs/mesa-12.0.1::gentoo[xvmc]
+# required by dev-util/android-studio-2.2.2.0.145.3360264-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXvMC-1.0.10 abi_x86_32

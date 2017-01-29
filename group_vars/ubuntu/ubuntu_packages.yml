@@ -1,0 +1,45 @@
+---
+dev_packages:
+  - "aclocal"
+  - "automake"
+  - "build-essential"
+  - "libtool"
+  - "libffi-dev"
+  - "libssl-dev"
+  - "libxml2-dev"
+  - "libxslt1-dev"
+  - "libjpeg8-dev"
+  - "zlib1g-dev"
+  - "linux-headers-generic"
+  - "python-dev"
+  - "python3-dev"
+
+user_packages:
+  # Editor
+  - "vim"
+  # Fonts
+  - "fonts-arphic-ukai"
+  - "fonts-inconsolata"
+  - "fonts-wqy-microhei"
+  - "ttf-wqy-microhei"
+  # Terminal
+  - "tmux"
+  - "xterm"
+  # X11
+  - "x11-apps"
+  - "x11-session-utils"
+  - "x11-xserver-utils"
+
+# admin_packages:
+#   - "ansible"
+
+
+# wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz
+# wget https://github.com/libevent/libevent/archive/release-2.1.8-stable.tar.gz
+# wget ftp://invisible-island.net/ncurses/ncurses.tar.gz
+# sudo sh -c 'echo "/usr/local/lib/" > /etc/ld.so.conf.d/lib-local.conf'
+# wget https://bootstrap.pypa.io/get-pip.py
+#
+#
+#
+#

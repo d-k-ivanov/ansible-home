@@ -1,0 +1,189 @@
+x11-wm/awesome ~amd64
+# required by luacov (argument)
+=dev-lua/luacov-0.8 ~amd64
+# required by ldoc (argument)
+=dev-lua/ldoc-1.4.6 ~amd64
+# required by xvfb-run (argument)
+=x11-misc/xvfb-run-1.18.4_p2 ~amd64
+# required by spyder (argument)
+=dev-python/spyder-3.0.2-r1 ~amd64
+# required by codeblocks (argument)
+=dev-util/codeblocks-16.01 ~amd64
+# required by eric (argument)
+=dev-util/eric-17.01 ~amd64
+# required by netdata (argument)
+=net-analyzer/netdata-1.4.0-r1 ~amd64
+# required by bcc (argument)
+=dev-util/bcc-0.2.0-r1 ~amd64
+# required by jd (argument)
+=www-client/jd-2.8.5_p120826 ~amd64
+# required by skypeforlinux (argument)
+=net-im/skypeforlinux-1.16.0.1 ~amd64
+# required by dev-util/rpmdevtools-8.5::gentoo
+# required by rpmdevtools (argument)
+=dev-util/checkbashisms-2.17.0 ~amd64
+# required by obs-studio (argument)
+=media-video/obs-studio-17.0.0 ~amd64
+# required by dev-qt/qtnetwork-5.6.2::gentoo[ssl]
+# required by net-misc/dropbox-14.3.17::gentoo[X]
+# required by net-misc/dropbox-cli-1.6.0::gentoo
+# required by dropbox-cli (argument)
+=dev-libs/openssl-1.1.0c ~amd64
+# required by dev-util/android-ndk-13b::gentoo
+# required by android-ndk (argument)
+=dev-util/android-sdk-update-manager-24.4.1 ~amd64
+# required by google-chrome (argument)
+=www-client/google-chrome-55.0.2883.87 ~amd64
+# required by fim (argument)
+=media-gfx/fim-0.4_rc3-r1 ~amd64
+# required by hplip-plugin (argument)
+=net-print/hplip-plugin-3.16.11 ~amd64
+# required by shutter (argument)
+=x11-misc/shutter-0.93.1-r2 ~amd64
+# required by android-util (argument)
+=dev-java/android-util-4.1.1.4 ~amd64
+# required by hashcat (argument)
+=app-crypt/hashcat-3.30 ~amd64
+# required by android-ndk (argument)
+=dev-util/android-ndk-13b ~amd64
+# required by owncloud-client (argument)
+=net-misc/owncloud-client-2.2.4-r1 ~amd64
+# required by lxcfs (argument)
+=sys-fs/lxcfs-2.0.4 ~amd64
+# required by cadaver (argument)
+=net-misc/cadaver-0.23.3 ~amd64
+# required by dbus-c++ (argument)
+=dev-libs/dbus-c++-0.9.0-r2 ~amd64
+# required by rpmdevtools (argument)
+=dev-util/rpmdevtools-8.5 ~amd64
+# required by dex (argument)
+=x11-misc/dex-0.7 ~amd64
+# required by winetricks (argument)
+=app-emulation/winetricks-20160724 ~amd64
+# required by skype (argument)
+=net-im/skype-4.3.0.37-r6 ~amd64
+# required by acpi_call (argument)
+=sys-power/acpi_call-1.1.0-r1 ~amd64
+# required by thermald (argument)
+=sys-power/thermald-1.5.3 ~amd64
+# required by dev-util/eric-17.01::gentoo
+# required by dev-util/eric (argument)
+=dev-python/pygments-2.1.3 ~amd64
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/notebook-4.3.0 ~amd64
+# required by dev-python/ipyparallel-5.2.0::gentoo
+=dev-python/ipython-5.1.0 ~amd64
+# required by dev-python/nbconvert-4.3.0::gentoo
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/entrypoints-0.2.1 ~amd64
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-libs/mathjax-2.7.0 ~amd64
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/nbconvert-4.3.0 ~amd64
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/ipykernel-4.5.2 ~amd64
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/jupyter_client-4.4.0 ~amd64
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/qtawesome-0.3.3 ~amd64
+# required by dev-python/ipython-5.1.0::gentoo[python_targets_python2_7]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+=dev-python/backports-shutil_get_terminal_size-1.0.0-r1 ~amd64
+# required by dev-python/ipython-5.1.0::gentoo
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+=dev-python/prompt_toolkit-1.0.3 ~amd64
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/nbformat-4.2.0 ~amd64
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/qtconsole-4.2.1 ~amd64
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/notebook-4.3.0::gentoo
+=dev-python/ipyparallel-5.2.0 ~amd64
+# required by dev-python/spyder-3.0.2-r1::gentoo[-python_targets_python3_5,python_targets_python3_4]
+# required by dev-python/spyder (argument)
+=dev-python/rope_py3k-0.9.4 ~amd64
+# required by dev-python/nbformat-4.2.0::gentoo
+# required by dev-python/notebook-4.3.0::gentoo
+# required by dev-python/ipyparallel-5.2.0::gentoo
+# required by dev-python/ipython-5.1.0::gentoo[smp]
+# required by dev-python/ipykernel-4.5.2::gentoo
+# required by dev-python/qtconsole-4.2.1::gentoo
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/jupyter_core-4.2.1 ~amd64
+# required by dev-python/spyder-3.0.2-r1::gentoo
+# required by dev-python/spyder (argument)
+=dev-python/QtPy-1.1.2 ~amd64
+# required by pidgin-gnome-keyring (argument)
+=x11-plugins/pidgin-gnome-keyring-2.0 ~amd64
+# required by pidgin-skypeweb (argument)
+=x11-plugins/pidgin-skypeweb-1.2 ~amd64
+# required by net-print/hplip-plugin-3.16.11::gentoo
+# required by hplip-plugin (argument)
+=net-print/hplip-3.16.11-r3 ~amd64
+app-admin/ansible ~amd64
+# required by net-misc/teamviewer (argument)
+=net-misc/teamviewer-12.0.71510 ~amd64
+app-emulation/virtualbox ~amd64
+# required by app-emulation/virtualbox-5.1.14::gentoo
+# required by virtualbox (argument)
+=dev-util/kbuild-0.1.9998_pre20131130-r1 ~amd64
+# required by app-emulation/virtualbox-5.1.14::gentoo
+# required by virtualbox (argument)
+=app-emulation/virtualbox-modules-5.1.14 ~amd64
+app-emulation/wine ~amd64
+# required by noto-cjk (argument)
+=media-fonts/noto-cjk-20150615 ~amd64
+app-emulation/virtualbox-extpack-oracle ~amd64
+dev-db/sqldeveloper ~amd64
+dev-java/oracle-jdk-bin ~amd64
+# required by dev-db/sqldeveloper-4.1.5.21.78::gentoo[sybase,mssql]
+# required by sqldeveloper (argument)
+=dev-java/jtds-1.3.1 ~amd64
+dev-python/pip ~amd64
+net-print/cups ~amd64
+net-print/cups-filters ~amd64
+dev-util/android-studio ~amd64

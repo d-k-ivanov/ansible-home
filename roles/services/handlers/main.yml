@@ -1,8 +1,0 @@
----
-- name: restart irqbalance
-  service: name=irqbalance state=restarted
-  become: true
-
-- name: restart cron
-  service: name=cronie state=restarted
-  become: true

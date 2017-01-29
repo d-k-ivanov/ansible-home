@@ -1,0 +1,11 @@
+common_packages:
+  # Archves
+  - "vim"
+  - "tmux"
+  - "bash-completion"
+  - "htop"
+  - "git"
+  - "wget"
+  - "python2-pip"
+  - "python34-pip"
+  - "mlocate"

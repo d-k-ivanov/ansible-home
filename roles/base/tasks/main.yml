@@ -1,0 +1,14 @@
+---
+
+- name: Init hosts file for dev environment
+  template: src=dev_hosts.j2 dest=/etc/hosts
+  when: 
+    - ansible_system == "Linux"
+    - env_dev == "yes"
+
+- name: Install software
+  include: soft.yml
+
+- name: Run initial servies
+  include: services.yml
+    

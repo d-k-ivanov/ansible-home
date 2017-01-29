@@ -4,22 +4,6 @@ system_group: id
 makepkg_nonroot_user: id
 user_groups:
   - "wheel"
-  - "floppy"
-  - "audio"
-  - "cdrom"
-  - "video"
-  - "usb"
-  - "users"
-  - "portage"
-  - "games"
-  - "ftp"
-  - "libvirt"
-  - "kvm"
-  - "uuidd"
-  - "vboxusers"
-  - "android"
-  - "lp"
-  - "lpadmin"
   
 root_user: root
 root_group: root

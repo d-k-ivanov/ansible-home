@@ -2,9 +2,11 @@
 - name: User's environment and software
   hosts: all
   gather_facts: true
+
+  vars:
+    services: "{{ ansible_os_family }}_services"
   
   vars_prompt:
-
   - name: "need_main_software_setup"
     prompt: "Do you want to install main software packages? (yes/no)"
     default: "no"
@@ -21,25 +23,27 @@
     private: no
 
   roles:
-    - role: soft
-      tags: ["user_env", "soft"]
+    # --- Workstation environment ---
+    - role: base
+      tags: ["base"]
       become: true
 
-    - role: touchpad
-      tags: ["hardware", "touchpad"]
-      become: true
-      when: laptop == "yes"
-
-    - role: lid
-      tags: ["hardware", "lid"]
+    # --- Laptop environment ---
+    - role: laptop
+      tags: ["hardware", "laptop"]
       become: true
       when: laptop == "yes"
 
-    - role: services
-      tags: ["systemd", "services"]
-      become: true
-
+    # --- Workstation environment ---
     - role: userspace
       tags: ["user_env", "userspace"]
       become: true
+      when: need_user_environment == "yes"
 
+- name: Oracle database
+  hosts: oracle
+  gather_facts: true
+
+  roles:
+    - role: oracle
+      tags: ["oracle"]
