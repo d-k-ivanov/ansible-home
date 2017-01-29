@@ -28,7 +28,7 @@ user_packages:
   # X11
   - "x11-apps"
   - "x11-session-utils"
-  - "x11-xserver-utils"
+  - "x12-xserver-utils"
 
 # admin_packages:
 #   - "ansible"
