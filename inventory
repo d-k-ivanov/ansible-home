@@ -2,6 +2,7 @@ dellxps15z.pupupon.com connection=local ansible_python_interpreter=/usr/bin/pyth
 dell7510.pupupon.com  connection=local ansible_python_interpreter=/usr/bin/python2.7
 dev-oracledb-01.pupupon.com
 dev-centos7-01.pupupon.com
+redmine.pupupon.com
 
 [home]
 dellxps15z.pupupon.com
@@ -16,6 +17,7 @@ dell7510.pupupon.com
 [rhel]
 dev-oracledb-01.pupupon.com
 dev-centos7-01.pupupon.com
+redmine.pupupon.com
 
 [oracle]
 dev-oracledb-01.pupupon.com

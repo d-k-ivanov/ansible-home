@@ -47,3 +47,12 @@
   roles:
     - role: oracle
       tags: ["oracle"]
+
+- name: Strngohld server
+  hosts: stronghold
+  gather_facts: true
+
+  roles:
+    - role: stronghold
+      tags: ["stronghold"]
+
