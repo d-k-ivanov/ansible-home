@@ -1,18 +1,26 @@
 ---
 dev_packages:
   - "aclocal"
+  - "apt-file"
+  - "autoconf"
   - "automake"
   - "build-essential"
-  - "libtool"
+  - "libevent-dev"
   - "libffi-dev"
+  - "libjpeg8-dev"
+  - "libncurses5"
+  - "libncurses5-dev"
   - "libssl-dev"
+  - "libtool"
   - "libxml2-dev"
   - "libxslt1-dev"
-  - "libjpeg8-dev"
-  - "zlib1g-dev"
   - "linux-headers-generic"
+  - "m4"
+  - "perl"
+  - "pkg-config"
   - "python-dev"
   - "python3-dev"
+  - "zlib1g-dev"
 
 user_packages:
   # Editor
