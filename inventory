@@ -1,8 +1,8 @@
 dellxps15z.pupupon.com connection=local ansible_python_interpreter=/usr/bin/python2.7
-dell7510.pupupon.com  connection=local ansible_python_interpreter=/usr/bin/python2.7
-dev-oracledb-01.pupupon.com
-dev-centos7-01.pupupon.com
-redmine.pupupon.com
+dell7510.pupupon.com connection=local ansible_python_interpreter=/usr/bin/python2.7
+#dev-oracledb-01.pupupon.com
+#dev-centos7-01.pupupon.com
+#redmine.pupupon.com
 
 [home]
 dellxps15z.pupupon.com
@@ -14,17 +14,14 @@ dellxps15z.pupupon.com
 [gentoo]
 dell7510.pupupon.com
 
-[rhel]
-dev-oracledb-01.pupupon.com
-dev-centos7-01.pupupon.com
-redmine.pupupon.com
+#[rhel]
+#dev-oracledb-01.pupupon.com
+#dev-centos7-01.pupupon.com
+#redmine.pupupon.com
 
-[oracle]
-dev-oracledb-01.pupupon.com
+#[oracle]
+#dev-oracledb-01.pupupon.com
 
-[stronghold]
-dev-centos7-01.pupupon.com
-
-[all:vars]
-ansible_ssh_extra_args = "-o ControlPersist=30m -o StrictHostKeyChecking=no"
+#[stronghold]
+#dev-centos7-01.pupupon.com
 

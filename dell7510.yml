@@ -1,0 +1,16 @@
+---
+- name: User's environment and software
+  hosts: dell7510.pupupon.com
+  gather_facts: true
+
+  vars_prompt:
+  - name: "need_main_software_setup"
+    prompt: "Do you want to install main software packages? (yes/no)"
+    default: "no"
+    private: no
+    
+  roles:
+    - role: dell7510
+      tags: ["dell7510"]
+      become: true
+
