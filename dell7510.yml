@@ -10,7 +10,12 @@
     private: no
     
   roles:
-    - role: dell7510
-      tags: ["dell7510"]
-      become: true
+    # - role: dell7510
+    #   tags: ["dell7510"]
+    #   become: true
 
+    # --- Laptop environment ---
+    - role: laptop
+      tags: ["hardware", "laptop"]
+      become: true
+      when: laptop == "yes"
