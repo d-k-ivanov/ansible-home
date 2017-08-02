@@ -1,5 +1,6 @@
 ---
 laptop: "yes"
+lid_action: "no"
 
 system_packages:
   # Archves
