@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# Wrapper to Ansible-Vault
+# Platform: Unix
+#
+# Author:   Dmitriy Ivanov
+#
+
+# Environment
+ANSIBLE_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Script
+f_usage() {
+	echo "Usage: $0 <COMMAND> <FILE>"
+	echo "
+	COMMAND:
+		create  - to create vault file
+		decrypt - to decrypt vaull file
+		edit    - to edit vault file
+		encrypt - to encrypt vault file
+		rekey   - to change vault key
+		view    - to view vault file
+	FILE:
+		path to vault file
+	"
+}
+
+if [[ -z "$1" ]] & [[ ! -f "$2" ]]; then
+	f_usage
+	exit 1
+fi
+
+case $1 in
+	create|decrypt|edit|encrypt|view )
+		ansible-vault ${1} --vault-password-file=$ANSIBLE_HOME/password ${2}
+		;;
+
+	rekey )
+		read -s -p "Enter new Ansible vault password: " NEW_VAULT_PASS
+		echo ${NEW_VAULT_PASS} > $ANSIBLE_HOME/password.tmp
+		ansible-vault --vault-password-file=$ANSIBLE_HOME/password --new-vault-password-file=$ANSIBLE_HOME/password.tmp ${1} ${2}
+		mv -f $ANSIBLE_HOME/password.tmp $ANSIBLE_HOME/password
+		;;
+
+	* )
+		f_usage
+		;;
+
+esac
+
+exit 0
+

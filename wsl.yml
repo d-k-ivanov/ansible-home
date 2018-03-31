@@ -1,0 +1,18 @@
+---
+# ---------------------------- Basic Setup -----------------------------------------------------------------------------
+- name: Initial version
+  hosts: all
+  roles:
+    - name: Basic environment
+      role: base
+      tags: ["base"]
+    - name: Docker cleaner
+      role: docker-clean
+      tags: ["docker-clean"]
+    - name: Nginx
+      role: nginx
+      tags: ["nginx"]
+    - name: Gitlab-CI
+      role: gitlab-ci
+      tags: ["gitlab-ci"]
+

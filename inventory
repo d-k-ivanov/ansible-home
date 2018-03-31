@@ -1,30 +1,8 @@
-dellxps15z.pupupon.com connection=local ansible_python_interpreter=/usr/bin/python2.7
-dell7510.pupupon.com connection=local ansible_python_interpreter=/usr/bin/python2.7
-#dev-oracledb-01.pupupon.com
-#dev-centos7-01.pupupon.com
-#redmine.pupupon.com
+# ------------------ Variables ------------------
+[all:vars]
+# infra_env=production
+# ansible_python_interpreter=/usr/bin/python2.7
 
-[home]
-dellxps15z.pupupon.com
-dell7510.pupupon.com
-
-[arch]
-dellxps15z.pupupon.com
-
-[gentoo]
-dell7510.pupupon.com
-
-[ubuntu]
-#dell7510.pupupon.com
-
-#[rhel]
-#dev-oracledb-01.pupupon.com
-#dev-centos7-01.pupupon.com
-#redmine.pupupon.com
-
-#[oracle]
-#dev-oracledb-01.pupupon.com
-
-#[stronghold]
-#dev-centos7-01.pupupon.com
-
+# --------------- Infrastructure ----------------
+[wsl]
+localhost ansible_connection=local

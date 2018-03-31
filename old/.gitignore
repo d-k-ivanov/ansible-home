@@ -47,5 +47,3 @@ $RECYCLE.BIN/
 user
 password
 logs
-tmp/
-venv

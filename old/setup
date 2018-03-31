@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 # Ansible initialization wrapper
-# Platform: Unix
+# Plathform: Unix
 #
-# Author:   Dmitriy Ivanov
+# Author: Dmitry Ivanov
 #
 
 echo "=== Welcome to Ansible installation and customization script ==="
-echo "    if you don't have Ansible-Vault password. Stop and ask your infrasructure administrator!"
+#echo "    if you don't have Ansible-Vault password. Stop and ask person who have it!"
 echo 
 
 read -n 1 -p "    Do you want to proceed? (y/[Any key to cancel]): " WANT_PROCEED
@@ -36,8 +36,8 @@ RSA_KEY=$( cat ~/.ssh/id_rsa.pub )
 read -p "Enter your user name for remote servers: " REMOTE_USER
 echo 
 
-read -p "Enter ansible vault password: " VAULT_PASS
-echo
+#read -p "Enter ansible vault password: " VAULT_PASS
+#echo 
 
 # Debug
 #echo "$USER"
@@ -48,13 +48,13 @@ touch $USER_FILE
 touch $VAULT_PASS_FILE
 
 echo "$REMOTE_USER" > $USER_FILE
-echo "$VAULT_PASS"  > $VAULT_PASS_FILE
+#echo "$VAULT_PASS"  > $VAULT_PASS_FILE
 
 # Results:
 echo "Your configuration:"
 echo "----------------------------------------"
 echo "Ansible user:     $REMOTE_USER"
-echo "Vault password:   $VAULT_PASS"
+#echo "Vault password:   $VAULT_PASS"
 echo "SSH RSA key:      $RSA_KEY"
 echo "----------------------------------------"
 echo "Send this to person who have root access to servers"
