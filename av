@@ -32,14 +32,14 @@ fi
 
 case $1 in
 	create|decrypt|edit|encrypt|view )
-		ansible-vault ${1} --vault-password-file=$ANSIBLE_HOME/password ${2}
+		ansible-vault ${1} --vault-password-file=${HOME}/ansible_password ${2}
 		;;
 
 	rekey )
 		read -s -p "Enter new Ansible vault password: " NEW_VAULT_PASS
-		echo ${NEW_VAULT_PASS} > $ANSIBLE_HOME/password.tmp
-		ansible-vault --vault-password-file=$ANSIBLE_HOME/password --new-vault-password-file=$ANSIBLE_HOME/password.tmp ${1} ${2}
-		mv -f $ANSIBLE_HOME/password.tmp $ANSIBLE_HOME/password
+		echo ${NEW_VAULT_PASS} > ${HOME}/ansible_password.tmp
+		ansible-vault --vault-password-file=${HOME}/ansible_password --new-vault-password-file=${HOME}/ansible_password.tmp ${1} ${2}
+		mv -f ${HOME}/ansible_password.tmp ${HOME}/ansible_password
 		;;
 
 	* )
