@@ -5,5 +5,10 @@
   roles:
     - name: Install and update software
       role: software
-      tags: ["base"]
+      tags: ["soft"]
       become: true
+    - name: Install RVM
+      role: rvm
+      tags: ["rvm"]
+      become: false
+
