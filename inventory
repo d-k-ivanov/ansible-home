@@ -1,7 +1,7 @@
 # ------------------ Variables ------------------
 [all:vars]
 # infra_env=production
-# ansible_python_interpreter=/usr/bin/python2.7
+ansible_python_interpreter=/usr/bin/python3
 
 # --------------- Infrastructure ----------------
 [wsl]
