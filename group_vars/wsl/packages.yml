@@ -1,0 +1,72 @@
+---
+del_packages:
+  - "mongodb-clients"
+
+apt_packages:
+  # Databases
+  - "mongodb-org-shell"
+  - "mongodb-org-tools"
+  # Dev tools
+  - "autoconf"
+  - "automake"
+  - "autotools-dev"
+  - "build-essential"
+  - "libtool"
+  - "linux-headers-generic"
+  - "m4"
+  - "git"
+  # Editors
+  - "vim"
+  # Files
+  - "mc"
+  - "mlocate"
+  - "rsync"
+  - "tree"
+  # JS
+  - "jq"
+  # Monitoring
+  - "htop"
+  - "iotop"
+  - "iperf"
+  - "iptstate"
+  - "ncdu"
+  - "sysfsutils"
+  - "sysstat"
+  # Network
+  - "bridge-utils"
+  - "ethtool"
+  - "mtr"
+  - "tcpdump"
+  - "traceroute"
+  # Packages
+  - "alien"
+  - "apt-file"
+  - "aptitude"
+  - "pkg-config"
+  # Perl
+  - "perl"
+  # Python
+  - "python-dev"
+  - "python3-dev"
+  - "python2.7"
+  - "python-apt"
+  - "python-setuptools"
+  # Security
+  - "apt-transport-https"
+  # Terminal
+  - "bash-completion"
+  - "tmux"
+  # Tools
+  - "pv"
+  # Web
+  - "apache2-utils"
+  - "curl"
+  - "wget"
+
+pip_packages:
+  # AWS
+  - "awscli"
+  - "boto"
+  - "boto3"
+  # Configuration
+  - "ansible"

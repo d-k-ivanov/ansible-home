@@ -1,18 +1,9 @@
 ---
 # ---------------------------- Basic Setup -----------------------------------------------------------------------------
-- name: Initial version
-  hosts: all
+- name: Setup WSL host
+  hosts: wsl
   roles:
-    - name: Basic environment
-      role: base
+    - name: Install and update software
+      role: software
       tags: ["base"]
-    - name: Docker cleaner
-      role: docker-clean
-      tags: ["docker-clean"]
-    - name: Nginx
-      role: nginx
-      tags: ["nginx"]
-    - name: Gitlab-CI
-      role: gitlab-ci
-      tags: ["gitlab-ci"]
-
+      become: true
