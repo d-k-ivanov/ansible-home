@@ -11,6 +11,7 @@ apt_packages:
   - "automake"
   - "autotools-dev"
   - "build-essential"
+  - "cmake"
   - "libtool"
   - "linux-headers-generic"
   - "m4"
