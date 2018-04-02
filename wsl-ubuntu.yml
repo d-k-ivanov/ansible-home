@@ -11,4 +11,8 @@
       role: rvm
       tags: ["rvm"]
       become: false
+    - name: Install ChefDK
+      role: chef
+      tags: ["chef"]
+      become: false
 
