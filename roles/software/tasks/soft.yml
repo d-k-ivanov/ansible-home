@@ -10,7 +10,7 @@
 - name: Upgrade packages
   apt: upgrade=dist
 
-- name: Install pacages
+- name: Install packages
   apt: name={{ item }} state=present
   loop: "{{ apt_packages }}"
 
