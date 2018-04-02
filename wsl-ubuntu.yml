@@ -15,4 +15,8 @@
       role: chef
       tags: ["chef"]
       become: false
+    - name: Install Docker
+      role: docker-wsl
+      tags: ["docker"]
+      become: true
 
