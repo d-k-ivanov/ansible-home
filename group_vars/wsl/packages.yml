@@ -61,7 +61,10 @@ apt_packages:
   # Tools
   - "pv"
   # Virtual
+  - "kubelet"
   - "kubectl"
+  - "kubeadm"
+  - "kubernetes-cni"
   # Web
   - "apache2-utils"
   - "curl"
