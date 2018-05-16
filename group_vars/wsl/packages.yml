@@ -54,11 +54,14 @@ apt_packages:
   - "python-setuptools"
   # Security
   - "apt-transport-https"
+  - "gnupg2"
   # Terminal
   - "bash-completion"
   - "tmux"
   # Tools
   - "pv"
+  # Virtual
+  - "kubectl"
   # Web
   - "apache2-utils"
   - "curl"

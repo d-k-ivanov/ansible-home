@@ -46,6 +46,8 @@ $RECYCLE.BIN/
 # Local files:
 user
 password
+ansible_user
+ansible_password
 logs
 tmp/
 venv
