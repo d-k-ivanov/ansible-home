@@ -2,6 +2,11 @@
 # ---------------------------- Basic Setup -----------------------------------------------------------------------------
 - name: Setup WSL host
   hosts: wsl
+  gather_facts: True
+  gather_subset: 
+    - "!ohai" 
+    - "!facter"
+        # filter: ansible_*
   roles:
     - name: Install and update software
       role: software
@@ -19,4 +24,7 @@
       role: docker-wsl
       tags: ["docker"]
       become: true
-
+    - name: Install powershell
+      role: powershell
+      tags: ["powershell"]
+      become: true

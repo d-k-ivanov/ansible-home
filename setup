@@ -29,8 +29,8 @@ fi
 
 # Environment
 ANSIBLE_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-USER_FILE=${HOME}/ansible_user
-VAULT_PASS_FILE=${HOME}/ansible_password
+USER_FILE=${ANSIBLE_HOME}/ansible_user
+VAULT_PASS_FILE=${ANSIBLE_HOME}/ansible_password
 RSA_KEY=$( cat ~/.ssh/id_rsa.pub )
 
 read -p "Enter your user name for remote servers: " REMOTE_USER

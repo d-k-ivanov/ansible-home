@@ -48,7 +48,7 @@ f_usage() {
 case $1 in
 	a )
 		shift
-		ansible -i ${ANSIBLE_HOME}/module1_inventory 		\
+		ansible -i ${ANSIBLE_HOME}/inventory 		\
 						-u ${REMOTE_USER} 					\
 						--vault-pass ${VAULT_PASS_FILE_TMP}	\
 						$@
