@@ -8,7 +8,7 @@
   poll: 10
   register: download
   ignore_errors: yes
-  sudo: yes
+  become: true
 
 - name: creating {{ chefdk_tmp }}
   file: path={{ chefdk_tmp }} state=directory
