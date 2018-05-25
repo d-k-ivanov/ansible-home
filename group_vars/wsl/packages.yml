@@ -69,6 +69,8 @@ apt_packages:
   - "apache2-utils"
   - "curl"
   - "wget"
+  # X
+  - "x11-apps"
 
 pip_packages:
   # AWS

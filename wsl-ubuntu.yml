@@ -28,3 +28,7 @@
       role: powershell
       tags: ["powershell"]
       become: true
+    - name: Install Visual Studio Code
+      role: vscode
+      tags: ["vscode"]
+      become: true
