@@ -19,10 +19,13 @@ apt_packages:
   # Editors
   - "vim"
   # Files
+  - "doublecmd-common"
   - "mc"
   - "mlocate"
   - "rsync"
   - "tree"
+  # Go
+  - "golang-go"
   # JS
   - "jq"
   # Monitoring
