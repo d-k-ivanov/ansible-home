@@ -6,12 +6,13 @@
   gather_subset: 
     - "!ohai" 
     - "!facter"
+    - "!hardware"
         # filter: ansible_*
   roles:
-    - name: Install and update software
-      role: software
-      tags: ["soft"]
-      become: true
+    # - name: Install and update software
+    #   role: software
+    #   tags: ["soft"]
+    #   become: true
     - name: Install RVM
       role: rvm
       tags: ["rvm"]

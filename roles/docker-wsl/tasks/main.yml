@@ -41,22 +41,22 @@
     path: "/home/{{ users.name }}/.localenv"
     line: 'export DOCKER_HOST=tcp://0.0.0.0:2375'
 
-- file:
-    path: "/{{ item }}"
-    state: directory
-    mode: 0755
-  loop:
-    - "c"
-    - "d"
+# - file:
+#     path: "/{{ item }}"
+#     state: directory
+#     mode: 0755
+#   loop:
+#     - "c"
+#     - "d"
 
-- lineinfile:
-    path: "/etc/fstab"
-    line: '/mnt/{{ item }}   /{{ item }}  none   bind   0 0'
-  loop:
-    - "c"
-    - "d"
+# - lineinfile:
+#     path: "/etc/fstab"
+#     line: '/mnt/{{ item }}   /{{ item }}  none   bind   0 0'
+#   loop:
+#     - "c"
+#     - "d"
 
-- shell: "mount -a"
+# - shell: "mount -a"
 
 
 
