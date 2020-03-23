@@ -1,5 +1,0 @@
----
-RedHat_services:
-  #- "cronie.service"
-  #- "irqbalance.service"
-  - "sshd.service"
