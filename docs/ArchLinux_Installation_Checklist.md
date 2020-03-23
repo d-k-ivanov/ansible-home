@@ -188,9 +188,10 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ## Users
 
 ```bash
-useradd -g users -G wheel -m user
+groupadd {username}
+useradd -g {username} -G wheel -m {username}
 passwd 
-passwd user
+passwd {username}
 ```
 
 ## Sudoers
