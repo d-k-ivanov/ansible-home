@@ -8,3 +8,9 @@
   file: 
     path: /tmp/aura-bin
     state: absent
+
+- name: revert nobodys home
+  user:
+    name: nobody
+    home: /
+    createhome: no
