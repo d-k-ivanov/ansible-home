@@ -1,1 +1,7 @@
 ---
+- hosts: localhost
+  become: true
+  roles:
+    - user
+  vars:
+    user_name:  divanov
