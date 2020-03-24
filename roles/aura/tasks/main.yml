@@ -36,7 +36,6 @@
     remote_src: yes
   become: yes
   become_user: nobody
-  become_flags: '-H /tmp'
   when: aura_installed is failed
   notify: remove aura build folder
 
@@ -46,7 +45,6 @@
     chdir: /tmp/aura-bin
   become: yes
   become_user: nobody
-  become_flags: '-H /tmp'
   when: aura_installed is failed
 
 - name: Install aura
