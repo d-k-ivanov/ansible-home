@@ -7,3 +7,4 @@
 - import_tasks: kernel.yml
 - import_tasks: sound.yml
 - import_tasks: pacman.yml
+- import_tasks: filesystems.yml

@@ -1,0 +1,10 @@
+---
+
+- name: Uninstall ntfs-3g base package
+  pacman:
+    name: ntfs-3g
+    state: absent
+
+- name: Install ntfs-3g-fuse to allow normal users to mount NTFS Volumes.
+  aura:
+    name: ntfs-3g-fuse
