@@ -19,7 +19,6 @@
   notify:
     - Create initial ramdisk environment
 
- - name: Install firmare
+- name: Install firmare
   pacman:
     name: linux-firmware
-   
