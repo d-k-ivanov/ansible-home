@@ -14,3 +14,10 @@
     name: nobody
     home: /
     createhome: no
+
+- name: remove nobody temporary home folder
+  file: 
+    path: /tmp/nobody
+    state: absent
+    become: yes
+

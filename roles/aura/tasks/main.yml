@@ -19,62 +19,70 @@
   pacman:
     name: sudo
 
-- tasks:
-  - name: Error handling
-    block:
-      - name: Change nobody's HOME
-        user:
-          name: nobody
-          home: /tmp
-          createhome: no
-        notify: revert nobodys home
+- name: Process aura installation with errors handling
+  block:
+    - name: Change nobody's HOME
+      user:
+        name: nobody
+        home: /tmp/nobody
+        move_home: no
+        createhome: yes
+      when: aura_installed is failed
+      notify: revert nobodys home
 
-      # unarchive with a url resulted in permissions errors in downloading it,
-      # hence the use of get_url as an intermediate step.
-      - name: Download aura snapshot.
-        get_url:
-          url: https://aur.archlinux.org/cgit/aur.git/snapshot/aura-bin.tar.gz
-          dest: /tmp/aura-bin.tar.gz
-        when: aura_installed is failed
-        notify: remove aura archive
+    # unarchive with a url resulted in permissions errors in downloading it,
+    # hence the use of get_url as an intermediate step.
+    - name: Download aura snapshot.
+      get_url:
+        url: https://aur.archlinux.org/cgit/aur.git/snapshot/aura-bin.tar.gz
+        dest: /tmp/aura-bin.tar.gz
+      when: aura_installed is failed
+      notify: remove aura archive
 
-      - name: Extract aura
-        unarchive:
-          src: /tmp/aura-bin.tar.gz
-          dest: /tmp
-          remote_src: yes
-        become: yes
-        become_user: nobody
-        when: aura_installed is failed
-        notify: remove aura build folder
+    - name: Extract aura
+      unarchive:
+        src: /tmp/aura-bin.tar.gz
+        dest: /tmp
+        remote_src: yes
+      become: yes
+      become_user: nobody
+      when: aura_installed is failed
+      notify: remove aura build folder
 
-      - name: Prepare aura installation
-        command: makepkg --noconfirm
-        args:
-          chdir: /tmp/aura-bin
-        become: yes
-        become_user: nobody
-        when: aura_installed is failed
+    - name: Prepare aura installation
+      command: makepkg --noconfirm
+      args:
+        chdir: /tmp/aura-bin
+      become: yes
+      become_user: nobody
+      when: aura_installed is failed
 
-      - name: Install aura
-        shell: pacman --upgrade aura-bin-*-x86_64.pkg.tar.xz --noconfirm
-        args:
-          chdir: /tmp/aura-bin
-        become: yes
-        when: aura_installed is failed
-    rescue:
-      - name: remove aura archive
-        file: 
-          path: /tmp/aura-bin.tar.gz
-          state: absent
+    - name: Install aura
+      shell: pacman --upgrade aura-bin-*-x86_64.pkg.tar.xz --noconfirm
+      args:
+        chdir: /tmp/aura-bin
+      become: yes
+      when: aura_installed is failed
+  rescue:
+    - name: remove aura archive
+      file: 
+        path: /tmp/aura-bin.tar.gz
+        state: absent
 
-      - name: remove aura build folder
-        file: 
-          path: /tmp/aura-bin
-          state: absent
+    - name: remove aura build folder
+      file: 
+        path: /tmp/aura-bin
+        state: absent
 
-      - name: revert nobodys home
-        user:
-          name: nobody
-          home: /
-          createhome: no
+    - name: revert nobodys home
+      user:
+        name: nobody
+        home: /
+        createhome: no
+
+    - name: remove nobody temporary home folder
+      file: 
+        path: /tmp/nobody
+        state: absent
+      become: yes
+
