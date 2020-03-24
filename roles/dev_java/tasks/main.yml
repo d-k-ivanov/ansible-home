@@ -7,13 +7,6 @@
       - jdk8-openjdk
       - jdk11-openjdk
 
-- name: Install Oracle Java
-  aura:
-    name:
-      - jdk   # Latest 14
-      - jdk8
-      - jdk11
-
 - name: Install common Java build tools
   pacman:
     name:
