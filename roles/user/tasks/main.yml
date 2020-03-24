@@ -1,6 +1,6 @@
 ---
 
-- name: Create group {{ user_name }} in wheel group
+- name: Create group {{ user_name }}
   group:
     name: "{{ user_name }}"
 
@@ -12,19 +12,6 @@
     password: "{{ user_encrypted_password }}"
     update_password: on_create
     createhome: yes
-  register: is_user_created
-
-- name: Force user {{ user_name }} to change password
-  user:
-    name: "{{ user_name }}"
-    expires:
-  when: is_user_created.changed
-
-- name: Remove expiration date if user already created
-  user:
-    name: "{{ user_name }}"
-    expires: -1
-  when: not is_user_created.changed
 
 - name: Install bash and bash-completion to be set as preferred shell.
   package:
