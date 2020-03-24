@@ -1,0 +1,6 @@
+---
+
+- name: Install base packages
+  pacman:
+    name: 
+      - which
