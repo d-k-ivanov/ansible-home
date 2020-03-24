@@ -2,7 +2,9 @@
 - hosts: localhost
   become: true
   roles:
-    - { role: aura, tags: ['aura']}
-    - { role: user, tags: ['user']}
+    - { role: system, tags: ['system'] }
+    # - { role: aura,   tags: ['aura']   }
+    # - { role: user,   tags: ['user']   }
   vars:
     user_name:  divanov
+    system_hostname: divanov-dev
