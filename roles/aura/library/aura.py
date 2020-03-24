@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2 -tt
 # -*- coding: utf-8 -*-
 
 import itertools
@@ -41,19 +41,6 @@ options:
         choices: ['yes', 'no']
         aliases: ['sysupgrade']
 
-    build:
-        description:
-            - Path to use when building AUR packages. By default the cache
-              directory configured in /etc/pacman.conf is used.
-        required: false
-        aliases: ['buildpath']
-
-    builduser:
-        description:
-            - User to build packages as.
-        required: false
-        default: 'nobody'
-
     delmakedeps:
         description:
             - Whether or not to uninstall build dependencies that are no longer
@@ -83,8 +70,6 @@ def main():
             name        = dict(aliases=['pkg', 'package'], type='list'),
             state       = dict(default='present', choices=['present', 'installed', 'latest']),
             upgrade     = dict(aliases=['sysupgrade'], default=False, type='bool'),
-            buildpath   = dict(aliases=['build', 'buildpath'], type='path'),
-            builduser   = dict(aliases=['builduser'], default='nobody'),
             delmakedeps = dict(default=False, type='bool')),
         required_one_of=[['name', 'upgrade']],
         supports_check_mode=True)
@@ -102,8 +87,7 @@ def main():
     if params['upgrade']:
         if module.check_mode:
             aura.check_upgrade()
-        aura.upgrade(buildpath=params['buildpath'],
-                     builduser=params['builduser'])
+        aura.upgrade()
 
     if params['name']:
         packages = params['name']
@@ -112,11 +96,9 @@ def main():
             aura.check_packages(packages, params['state'])
 
         if params['state'] in ['present', 'latest']:
-            aura.install_packages(packages=packages,
-                                  state=params['state'],
-                                  buildpath=params['buildpath'],
-                                  builduser=params['builduser'],
-                                  delmakedeps=params['delmakedeps'])
+            aura.install_packages(packages,
+                                  params['state'],
+                                  params['delmakedeps'])
 
 class Aura(object):
     """A class used to execute Aura commands."""
@@ -131,17 +113,11 @@ class Aura(object):
         self._aura_path = aura_path
 
 
-    def upgrade(self, buildpath, builduser):
-        """
-        Upgrade all AUR packages on the system.
-        :type buildpath: Optional[str]
-        :type builduser: str
-        """
+    def upgrade(self):
+        """Upgrade all AUR packages on the system."""
         packages_to_upgrade = self._packages_to_upgrade()
 
-        upgrade_command = "%s --aursync --builduser=%s --sysupgrade --noconfirm" % (self._aura_path, builduser)
-        if buildpath is not None:
-            upgrade_command += " --buildpath=%s" % buildpath
+        upgrade_command = "%s -A --sysupgrade --noconfirm" % self._aura_path
         rc, _, _ = self._module.run_command(upgrade_command, check_rc=False)
         if rc == 0:
             self._module.exit_json(
@@ -184,14 +160,10 @@ class Aura(object):
         return packages
 
 
-    def install_packages(self, packages, state,
-                         buildpath, builduser,
-                         delmakedeps):
+    def install_packages(self, packages, state, delmakedeps):
         """
         :type packages: list[str]
         :type state: str
-        :type buildpath: Optional[str]
-        :type builduser: str
         :type delmakedeps: bool
         """
         successful_installs = 0
@@ -199,10 +171,7 @@ class Aura(object):
                                for package in packages
                                if self._needs_installation(package, state))
         for package in packages_to_install:
-            params = "--aursync --builduser=%s %s" % (builduser, package)
-
-            if buildpath is not None:
-                params += " --build=%s" % buildpath
+            params = "--aursync --builduser=nobody %s" % package
 
             if delmakedeps:
                 params += " --delmakedeps"
