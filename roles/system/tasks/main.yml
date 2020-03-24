@@ -7,5 +7,6 @@
 - import_tasks: network.yml
 - import_tasks: locale.yml
 - import_tasks: kernel.yml
+- import_tasks: bootloader.yml
 - import_tasks: sound.yml
 - import_tasks: filesystems.yml

@@ -1,9 +1,12 @@
 ---
 
-- name: Create initial ramdisk environment
+- name: create init ramdisk
   command: mkinitcpio --preset linux
   # mkinitcpio tries to find the fsck.overlay which does not exist.
   when: lookup('env', 'container') != 'docker'
+
+- name: build grub config
+  command: grub-mkconfig -o /boot/grub/grub.cfg
 
 # - name: restart neworkmanager
 #   service: name=networkmanager.service state=restarted

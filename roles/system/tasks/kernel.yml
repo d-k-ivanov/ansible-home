@@ -11,14 +11,20 @@
     name:
       - linux
       - mkinitcpio
+  notify:
+    - create init ramdisk
+
+- name: Install firmare
+  pacman:
+    name: 
+      - linux-firmware
+      - intel-ucode
+  notify:
+    - create init ramdisk
 
 - name: Install mkinitcpio configuration
   copy:
     src: mkinitcpio.conf
     dest: /etc/mkinitcpio.conf
   notify:
-    - Create initial ramdisk environment
-
-- name: Install firmare
-  pacman:
-    name: linux-firmware
+    - create init ramdisk
