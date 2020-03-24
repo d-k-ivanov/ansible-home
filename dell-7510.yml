@@ -3,7 +3,7 @@
   become: true
   roles:
     - { role: system,       tags: ['system']                   }
-    # - { role: aura,       tags: ['aura']                     }
+    # - { role: aur_tools,    tags: ['aur_tools','aura', 'aur' ] }
     - { role: user,         tags: ['user']                     }
     - { role: dev_tools,    tags: ['dev_tools' ,   'tools'   ] }
     - { role: dev_python,   tags: ['dev_python',   'python'  ] }

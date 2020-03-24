@@ -4,3 +4,5 @@
   pacman:
     name: 
       - which
+      - curl
+      
