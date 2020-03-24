@@ -1,0 +1,30 @@
+---
+
+- name: Install main editors
+  pacman:
+    name:
+      - gvim
+
+- name: Install terminal utils
+  pacman:
+    name:
+      - tmux
+      - xterm
+
+# - name: Install crypto utils
+#   pacman:
+#     name:
+#       - pass
+
+- name: Install version control system utils
+  pacman:
+    name:
+      - git
+      - mercurial
+      - subversion
+
+- name: Install web utils
+  pacman:
+    name:
+      - curl
+      - wget

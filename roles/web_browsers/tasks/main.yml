@@ -1,0 +1,6 @@
+---
+
+- name: Istall console browsers
+  pacman:
+    name:
+      - links

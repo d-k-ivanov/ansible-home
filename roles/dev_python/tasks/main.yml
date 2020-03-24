@@ -1,0 +1,24 @@
+
+- name: Install Python 3 development utilities
+  pacman:
+    name:
+      - python
+      - pypy3
+      - python-pip
+      - python-pylint
+      - python-tox
+      - python-virtualenv
+      - ipython
+
+- name: Install Python Language Server and optional dependencies
+  pacman:
+    name:
+      - python-language-server
+      - python-mccabe
+      - python-rope
+      - python-pyflakes
+      - python-pycodestyle
+      - python-pylint
+      - autopep8
+      - yapf
+      - python-pydocstyle
