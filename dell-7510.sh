@@ -43,7 +43,7 @@ case $1 in
     a )
         shift
         eval ansible                                        \
-            -i ${ANSIBLE_HOME}/inventory -K                 \
+            -i ${ANSIBLE_HOME}/inventory                    \
             --vault-password-file=${VAULT_PASS_FILE_TMP}    \
             $@
         ;;
@@ -51,7 +51,7 @@ case $1 in
     ap )
         shift
         ansible-playbook                                    \
-            -i ${ANSIBLE_HOME}/inventory -K                 \
+            -i ${ANSIBLE_HOME}/inventory                    \
             --vault-password-file=${VAULT_PASS_FILE_TMP}    \
             ${ANSIBLE_HOME}/dell-7510.yml                   \
             $@

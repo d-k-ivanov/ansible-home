@@ -4,7 +4,7 @@
   roles:
     - { role: system,       tags: ['system']                   }
     # - { role: aura,       tags: ['aura']                     }
-    # - { role: user,       tags: ['user']                     }
+    - { role: user,         tags: ['user']                     }
     - { role: dev_tools,    tags: ['dev_tools' ,   'tools'   ] }
     - { role: dev_python,   tags: ['dev_python',   'python'  ] }
     - { role: web_browsers, tags: ['web_browsers', 'browsers'] }
