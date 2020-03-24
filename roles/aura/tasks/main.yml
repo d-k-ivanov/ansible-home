@@ -1,0 +1,53 @@
+---
+
+- name: Install makepkg dependencies
+  pacman:
+    name:
+      - binutils # for the 'strip' binary
+      - ccache
+      - fakeroot # So that we may enter the 'fakeroot' environment to build aura
+
+- name: Check if Aura is installed.
+  command: pacman -Qi aura-bin
+  register: aura_installed
+  ignore_errors: yes
+  # We're only reading the state of the machine, so this never changes anything.
+  changed_when: False
+  # Have this run even when in check-mode as subsequent tasks depend on 'aura_installed' being set.
+  check_mode: no
+
+- name: Install sudo to change to 'nobody'
+  pacman:
+    name: sudo
+
+# unarchive with a url resulted in permissions errors in downloading it,
+# hence the use of get_url as an intermediate step.
+- name: Download aura snapshot.
+  get_url:
+    url: https://aur.archlinux.org/cgit/aur.git/snapshot/aura-bin.tar.gz
+    dest: /tmp/aura-bin.tar.gz
+  when: aura_installed is failed
+
+- name: Extract aura
+  unarchive:
+    src: /tmp/aura-bin.tar.gz
+    dest: /tmp
+    remote_src: yes
+  become: yes
+  become_user: nobody
+  when: aura_installed is failed
+
+- name: Prepare aura installation
+  command: makepkg --noconfirm
+  args:
+    chdir: /tmp/aura-bin
+  become: yes
+  become_user: nobody
+  when: aura_installed is failed
+
+- name: Install aura
+  shell: pacman --upgrade aura-bin-*-x86_64.pkg.tar.xz --noconfirm
+  args:
+    chdir: /tmp/aura-bin
+  become: yes
+  when: aura_installed is failed

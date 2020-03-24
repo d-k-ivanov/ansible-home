@@ -2,6 +2,7 @@
 - hosts: localhost
   become: true
   roles:
-    - user
+    - { role: aura, tags: ['aura']}
+    - { role: user, tags: ['user']}
   vars:
     user_name:  divanov
