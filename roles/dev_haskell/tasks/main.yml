@@ -1,0 +1,10 @@
+---
+
+- name: Install haskell tools
+  pacman:
+    name:
+      - ghc
+      - hlint
+      - stack
+      - hasktags
+      - hoogle

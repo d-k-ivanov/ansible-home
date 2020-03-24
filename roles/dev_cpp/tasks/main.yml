@@ -1,0 +1,20 @@
+---
+
+- name: Install C/C++ compiler tools
+  pacman:
+    name:
+      - ccache
+      - cmake
+      - clang
+      - clang-tools-extra
+      - distcc
+      - gcc
+      - gdb
+      - valgrind
+
+# - name: Install C/C++ libraries
+#   pacman:
+#     name:
+#       - boost
+#       - boost-libs
+#       - gtest

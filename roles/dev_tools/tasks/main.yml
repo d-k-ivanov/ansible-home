@@ -11,6 +11,11 @@
     name:
       - gvim
 
+- name: Install development tools
+  pacman:
+    name:
+      - base-devel
+
 - name: Install terminal utils
   pacman:
     name:
