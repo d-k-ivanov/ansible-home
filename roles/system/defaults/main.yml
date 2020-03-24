@@ -2,7 +2,6 @@
 
 system_hostname: linux
 system_timezone: Europe/Moscow
-system_locale: 
-  - en_US.UTF-8
-  - es_ES.UTF-8
-  - ru_RU.UTF-8
+system_locale: en_US.UTF-8
+#system_locale: es_ES.UTF-8
+#system_locale: ru_RU.UTF-8

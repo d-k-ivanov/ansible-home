@@ -1,0 +1,5 @@
+---
+
+- name: Install sound utilities
+  pacman:
+    name: alsa-utils

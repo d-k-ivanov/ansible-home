@@ -4,3 +4,9 @@
   command: mkinitcpio --preset linux
   # mkinitcpio tries to find the fsck.overlay which does not exist.
   when: lookup('env', 'container') != 'docker'
+
+# - name: restart neworkmanager
+#   service: name=networkmanager.service state=restarted
+
+# - name: restart sshd
+#   service: name=sshd.service state=restarted

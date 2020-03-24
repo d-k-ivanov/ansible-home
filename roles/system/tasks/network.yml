@@ -1,0 +1,32 @@
+---
+- name: Install network tools
+  package:
+    name:
+      - dhcpcd
+      - ethtool
+      - inetutils
+      - netctl
+      - nmap
+      - wpa_supplicant
+    state: present
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
+
+- name: Set hostname to {{ system_hostname }}
+  hostname:
+    name: "{{ system_hostname }}"
+  # hostnamectl doesn't work properly in a container (which is used for testing)
+  # See https://lists.freedesktop.org/archives/systemd-devel/2017-February/038291.html
+  when: lookup('env', 'container') != 'docker'
+
+- name: Enable dhcp service
+  service: name=dhcpcd state=started enabled=yes
+
+- name: Install openssh
+  pacman:
+    name: openssh
+
+- name: Enable sshd service
+  service: name=sshd state=started enabled=yes

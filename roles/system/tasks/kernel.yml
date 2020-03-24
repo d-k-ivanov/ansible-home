@@ -1,0 +1,25 @@
+---
+
+- name: Install linux kernel
+  pacman:
+    name:
+      - linux
+      - linux-headers
+
+- name: Install mkinitcpio and presets
+  pacman:
+    name:
+      - linux
+      - mkinitcpio
+
+- name: Install mkinitcpio configuration
+  copy:
+    src: mkinitcpio.conf
+    dest: /etc/mkinitcpio.conf
+  notify:
+    - Create initial ramdisk environment
+
+ - name: Install firmare
+  pacman:
+    name: linux-firmware
+   
