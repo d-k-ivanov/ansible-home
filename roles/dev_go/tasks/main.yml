@@ -1,0 +1,9 @@
+---
+
+- name: Install go development tools
+  pacman:
+    name:
+      - dep
+      - go
+      - go-tools
+      - godep

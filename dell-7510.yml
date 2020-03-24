@@ -2,11 +2,15 @@
 - hosts: localhost
   become: true
   roles:
+    ## System
+    # - { role: aur_tools,  tags: ['aur_tools','aura', 'aur' ] }
+    # - { role: user,       tags: ['user']                     }
     - { role: system,       tags: ['system']                   }
-    # - { role: aur_tools,    tags: ['aur_tools','aura', 'aur' ] }
-    # - { role: user,         tags: ['user']                     }
-    - { role: dev_tools,    tags: ['dev_tools' ,   'tools'   ] }
+
+    ## Apps
+    - { role: dev_go,       tags: ['dev_python',   'python'  ] }
     - { role: dev_python,   tags: ['dev_python',   'python'  ] }
+    - { role: dev_tools,    tags: ['dev_tools' ,   'tools'   ] }
     - { role: web_browsers, tags: ['web_browsers', 'browsers'] }
   vars:
     user_name:  divanov

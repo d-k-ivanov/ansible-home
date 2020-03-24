@@ -1,4 +1,5 @@
 ---
+
 - name: remove aura archive
   file: 
     path: /tmp/aura-bin.tar.gz
