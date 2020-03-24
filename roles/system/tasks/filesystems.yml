@@ -6,6 +6,7 @@
     state: absent
 
 - name: Install ntfs-3g-fuse to allow normal users to mount NTFS Volumes.
-  aur:
+  aura:
     name: ntfs-3g-fuse
-    user: "{{ user_name }}"
+    # user: "{{ user_name }}"
+

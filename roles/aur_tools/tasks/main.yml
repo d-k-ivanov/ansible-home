@@ -1,10 +1,11 @@
 ---
-- name: Install makepkg dependencies
+- name: Install dependencies
   pacman:
     name:
-      - binutils # for the 'strip' binary
+      - base-devel # Must have! To be able to build something from AUR
+      - binutils   # For the 'strip' binary
       - ccache
-      - fakeroot # So that we may enter the 'fakeroot' environment to build aura
+      - fakeroot   # So that we may enter the 'fakeroot' environment to build aura
 
 - name: Check if Aura is installed.
   command: pacman -Qi aura-bin

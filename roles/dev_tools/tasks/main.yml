@@ -1,5 +1,11 @@
 ---
 
+- name: Remove conflicting packages
+  pacman:
+    name:
+      - vim
+    state: absent
+
 - name: Install main editors
   pacman:
     name:
