@@ -63,6 +63,7 @@
   pacman:
     name:
       - xorg-font-util
+      - xorg-font-utils
       - xorg-fonts-75dpi
       - xorg-fonts-100dpi
       - xorg-fonts-encodings

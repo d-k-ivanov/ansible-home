@@ -1,0 +1,46 @@
+---
+
+- name: Install font apps
+  pacman:
+    name:
+      - fontconfig
+      - sdl_ttf
+      - freetype2
+      - fontforge
+
+- name: Install fonts
+  pacman:
+    name:
+      - noto-fonts
+      - noto-fonts-emoji
+      - noto-fonts-cjk
+      - ttf-dejavu
+      - ttf-droid
+      - ttf-font-awesome
+      - ttf-hack
+      - ttf-liberation
+      - ttf-roboto
+      - ttf-roboto-mono
+      - ttf-ubuntu-font-family
+      - wqy-microhei-lite
+      - ttf-inconsolata
+      - ttf-bitstream-vera
+      - ttf-arphic-uming
+      - ttf-arphic-ukai
+      - terminus-font
+      - otf-ipafont
+      - opendesktop-fonts
+      - font-bh-ttf
+      - font-bitstream-speedo
+      - adobe-source-code-pro-fonts
+
+- name: Install fonts (AUR)
+  aura:
+    name:
+      - gohufont
+      - ttf-mac-fonts
+      - montserrat-font-ttf
+      - ttf-ms-fonts
+      - ttf-vista-fonts
+      - siji-git            # Cool iconic font
+    delmakedeps: yes
