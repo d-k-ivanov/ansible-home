@@ -7,6 +7,10 @@
       - sdl_ttf
       - freetype2
       - fontforge
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install fonts
   pacman:
@@ -33,6 +37,10 @@
       - font-bh-ttf
       - font-bitstream-speedo
       - adobe-source-code-pro-fonts
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install fonts (AUR)
   aura:
@@ -44,3 +52,7 @@
       - ttf-vista-fonts
       - siji-git            # Cool iconic font
     delmakedeps: yes
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2

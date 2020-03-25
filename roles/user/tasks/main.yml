@@ -14,10 +14,14 @@
     createhome: yes
 
 - name: Install bash and bash-completion to be set as preferred shell.
-  package:
+  pacman:
     name: 
       - bash
       - bash-completion
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Set preferred shell for {{ user_name }}
   user:

@@ -5,27 +5,47 @@
     name:
       - vim
     state: absent
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install main editors
   pacman:
     name:
       - gvim
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install development tools
   pacman:
     name:
       - base-devel
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install terminal utils
   pacman:
     name:
       - tmux
       - xterm
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 # - name: Install crypto utils
 #   pacman:
 #     name:
 #       - pass
+#   register: task_result
+#   until: task_result is success
+#   retries: 10
+#   delay: 2
 
 - name: Install version control system utils
   pacman:
@@ -33,9 +53,17 @@
       - git
       - mercurial
       - subversion
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install web utils
   pacman:
     name:
       - curl
       - wget
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2

@@ -9,13 +9,21 @@
       - xorg-server-xephyr
       - xorg-server-xnest
       - xorg-server-xvfb
-      # - xorg-server-xwayland  # for Wayland support 
+      # - xorg-server-xwayland  # for Wayland support
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install xorg drivers
   pacman:
     name:
       - xf86-video-fbdev # xorg default driver
       - xf86-video-vesa
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install xorg apps
   pacman:
@@ -58,6 +66,10 @@
       - xorg-xwd
       - xorg-xwininfo
       - xorg-xwud
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 - name: Install xorg fonts
   pacman:
@@ -67,6 +79,10 @@
       - xorg-fonts-75dpi
       - xorg-fonts-100dpi
       - xorg-fonts-encodings
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
 
 # - name: Allow Xorg to be used by anyone
 #   copy:
