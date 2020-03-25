@@ -30,4 +30,4 @@
     name: openssh
 
 - name: Enable sshd service
-  service: name=sshd state=started enabled=yes
+  service: name=sshd.service state=started enabled=yes

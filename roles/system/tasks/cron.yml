@@ -1,0 +1,16 @@
+---
+
+- name: Install cron daemon
+  pacman:
+    name: cronie
+
+
+- name: Install GRUB configuration
+  copy:
+    src: etc/default/cron
+    dest: /etc/default/cron
+  notify:
+    - restart cronie
+
+- name: Enable cronie service
+  service: namecronie.service state=started enabled=yes

@@ -10,3 +10,4 @@
 - import_tasks: bootloader.yml
 - import_tasks: sound.yml
 - import_tasks: filesystems.yml
+- import_tasks: cron.yml
