@@ -1,6 +1,0 @@
----
-
-- name: Install main editors
-  pacman:
-    name:
-      - awesome

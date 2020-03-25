@@ -7,7 +7,10 @@
     # - { role: user,         tags: ['user']                          }
     - { role: system,         tags: ['system']                        }
     # - { role: xorg,           tags: ['xorg']                        }
+    
+    ## Desktop
     - { role: desktop,        tags: ['desktop']                       }
+    - { role: web_browsers, tags: ['web_browsers', 'browsers']        }
     
     ## Development
     - { role: dev_tools,      tags: ['dev_tools', 'tools']            }
@@ -17,9 +20,6 @@
     - { role: dev_python,     tags: ['dev_python', 'python']          }
     - { role: dev_haskell,    tags: ['dev_haskell', 'haskell']        }
     - { role: dev_go,         tags: ['dev_go', 'go']                  }
-
-    ## Desktop
-    - { role: web_browsers, tags: ['web_browsers', 'browsers']        }
 
   vars:
     user_name:  divanov
