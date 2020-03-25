@@ -13,4 +13,4 @@
     - restart cronie
 
 - name: Enable cronie service
-  service: namecronie.service state=started enabled=yes
+  service: name=cronie.service state=started enabled=yes
