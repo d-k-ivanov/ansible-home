@@ -6,8 +6,9 @@
     # - { role: aur_tools,    tags: ['aur_tools','aura', 'aur' ]      }
     # - { role: user,         tags: ['user']                          }
     - { role: system,         tags: ['system']                        }
-    - { role: xorg,           tags: ['xorg']                          }
-
+    # - { role: xorg,           tags: ['xorg']                        }
+    - { role: desktop,        tags: ['desktop']                       }
+    
     ## Development
     - { role: dev_tools,      tags: ['dev_tools', 'tools']            }
     - { role: dev_cpp,        tags: ['dev_cpp', 'cpp']                }
