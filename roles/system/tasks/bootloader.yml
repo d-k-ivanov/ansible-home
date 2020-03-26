@@ -10,6 +10,11 @@
   retries: 10
   delay: 2
 
+- name: Install GRUB font for hi dpi
+  copy:
+    src: boot/grub/fonts/terminus32.pf2
+    dest: /boot/grub/fonts/terminus32.pf2
+
 - name: Install GRUB configuration
   copy:
     src: etc/default/grub

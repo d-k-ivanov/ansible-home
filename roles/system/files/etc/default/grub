@@ -52,3 +52,6 @@ GRUB_DISABLE_RECOVERY=true
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"
+
+# Font for hi dpi
+GRUB_FONT=/boot/grub/fonts/terminus32.pf2
