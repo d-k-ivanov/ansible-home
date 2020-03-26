@@ -8,3 +8,11 @@
   until: task_result is success
   retries: 10
   delay: 2
+
+- name: Install X init rc
+  copy:
+    src: .xinitrc
+    dest: "/home/{{ user_name }}/.xinitrc"
+    owner: "{{ user_name }}"
+    group: "{{ user_name }}"
+    mode: '0644'
