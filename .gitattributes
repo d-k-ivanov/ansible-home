@@ -23,6 +23,7 @@
 *.mp3 binary
 *.msi binary
 *.ogg binary
+*.pf2 binary
 *.png binary
 *.psd binary
 *.spl binary
