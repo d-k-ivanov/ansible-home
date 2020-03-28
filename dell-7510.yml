@@ -6,12 +6,13 @@
     # - { role: aur_tools,    tags: ['aur_tools','aura', 'aur' ]      }
     # - { role: user,         tags: ['user']                          }
     - { role: system,         tags: ['system']                        }
-    # - { role: xorg,           tags: ['xorg']                        }
-    
+    # - { role: xorg,         tags: ['xorg']                          S}
+
     ## Desktop
     - { role: desktop,        tags: ['desktop']                       }
-    - { role: web_browsers, tags: ['web_browsers', 'browsers']        }
-    
+    - { role: browsers,       tags: ['browsers']                      }
+    - { role: office,         tags: ['office']                        }
+
     ## Development
     - { role: dev_tools,      tags: ['dev_tools', 'tools']            }
     - { role: dev_cpp,        tags: ['dev_cpp', 'cpp']                }
@@ -20,6 +21,7 @@
     - { role: dev_python,     tags: ['dev_python', 'python']          }
     - { role: dev_haskell,    tags: ['dev_haskell', 'haskell']        }
     - { role: dev_go,         tags: ['dev_go', 'go']                  }
+    - { role: dev_dotnet,     tags: ['dev_dotnet', 'dotnet']          }
 
   vars:
     user_name:  divanov
