@@ -1,6 +1,6 @@
 ---
 
-- name: Install file managers
+- name: Install instant messengers (AUR)
   aura:
     name:
       - skypeforlinux-preview-bin
