@@ -8,6 +8,8 @@
     - { role: system,         tags: ['system']                        }
     # - { role: xorg,         tags: ['xorg']                          }
     - { role: virtualbox,     tags: ['virtualbox']                    }
+    - { role: kvm,            tags: ['kvm']                           }
+    - { role: docker,         tags: ['docker']                        }
 
     ## Desktop
     - { role: desktop,        tags: ['desktop']                       }
