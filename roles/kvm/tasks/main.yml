@@ -1,0 +1,36 @@
+---
+
+- name: Install KVM related packages
+  pacman:
+    name:
+      - bridge-utils
+      - qemu
+      - libvirt
+      - virt-install
+      - virt-manager
+      - virt-viewer
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
+
+# - name: Install KVM related packages (AUR)
+#   aura:
+#     name:
+#       - ---
+#   register: task_result
+#   until: task_result is success
+#   retries: 10
+#   delay: 2
+
+- name: Enable and start libvirtd service
+  systemd:
+    name: libvirtd
+    state: started
+    enabled: yes
+
+- name: Add user {{ user_name }} in libvirt group
+  user:
+    name: "{{ user_name }}"
+    groups: libvirt
+    append: yes
