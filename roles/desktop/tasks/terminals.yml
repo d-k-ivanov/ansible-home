@@ -1,6 +1,6 @@
 ---
 
-  - name: Install terminal utils
+- name: Install terminal utils
   pacman:
     name:
       - tmux
