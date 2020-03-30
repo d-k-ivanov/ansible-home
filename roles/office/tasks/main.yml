@@ -3,3 +3,4 @@
 - import_tasks: messaging.yml
 - import_tasks: office.yml
 - import_tasks: dictionaries.yml
+- import_tasks: mail.yml

@@ -26,6 +26,9 @@
     - { role: dev_go,         tags: ['dev_go', 'go']                  }
     - { role: dev_dotnet,     tags: ['dev_dotnet', 'dotnet']          }
 
+    ## Work
+    - { role: devops,         tags: ['devops']                        }
+
   vars:
     user_name:  divanov
     system_hostname: divanov-dev

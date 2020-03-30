@@ -33,6 +33,26 @@
   pacman:
     name:
       - base-devel
+      - jq
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
+
+- name: Install shells
+  pacman:
+    name:
+      - bash
+      - bash-completion
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
+
+- name: Install shells (AUR)
+  pacman:
+    name:
+      - powershell
   register: task_result
   until: task_result is success
   retries: 10

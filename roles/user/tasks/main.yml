@@ -9,13 +9,14 @@
     name: "{{ user_name }}"
     group: "{{ user_name }}"
     groups: wheel
+    append: yes
     password: "{{ user_encrypted_password }}"
     update_password: on_create
     createhome: yes
 
 - name: Install bash and bash-completion to be set as preferred shell.
   pacman:
-    name: 
+    name:
       - bash
       - bash-completion
   register: task_result
